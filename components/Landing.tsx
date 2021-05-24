@@ -7,10 +7,10 @@ import {
   Heading,
   Text,
 } from "@chakra-ui/layout";
+import Image from "next/image";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import { chakra } from "@chakra-ui/system";
 import { useTheme } from "@emotion/react";
-import Image from "next/image";
 
 const Landing = (): JSX.Element => {
   const theme = useTheme();

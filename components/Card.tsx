@@ -16,7 +16,7 @@ const Card = ({ icon, title, text, w, h }: CardProps): JSX.Element => {
         <Image width={w} height={h} src={icon} />
       </Box>
       <Box textAlign="left">
-        <Text fontSize="20px" fontWeight="bold" mb={1}>
+        <Text fontSize={{ base: "18px", md: "20px" }} fontWeight="bold" mb={1}>
           {title}
         </Text>
         <Text color="#718096" fontSize="13px">

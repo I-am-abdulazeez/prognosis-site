@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "../styles/theme";
+import "animate.css/animate.min.css";
 import "../styles/globals.css";
 
 import NextNprogress from "nextjs-progressbar";

@@ -88,7 +88,13 @@ const Navbar = (): JSX.Element => {
               </Link>
             ))}
           </Flex>
-          <Drawer isOpen={isOpen} size="xs" placement="left" onClose={onClose}>
+          <Drawer
+            closeOnOverlayClick={false}
+            isOpen={isOpen}
+            size="xs"
+            placement="left"
+            onClose={onClose}
+          >
             <DrawerOverlay />
             <DrawerContent>
               <DrawerCloseButton
