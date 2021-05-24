@@ -20,9 +20,16 @@ const ErrorPage = (): JSX.Element => {
           alt="Sad Svg"
         />
       </Box>
-      <Text mb={3}>This Page is not found</Text>
+      <Text mb={3}>Page cannot be found on this site</Text>
       <Link href="/">
-        <Button size="sm" variant="ghost">
+        <Button
+          size="sm"
+          _focus={{
+            boxShadow: "0 0 0 3px #63f756",
+          }}
+          colorScheme="primary"
+          variant="ghost"
+        >
           Take me home
         </Button>
       </Link>
