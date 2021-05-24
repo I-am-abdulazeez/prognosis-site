@@ -91,7 +91,12 @@ const Navbar = (): JSX.Element => {
           <Drawer isOpen={isOpen} size="xs" placement="left" onClose={onClose}>
             <DrawerOverlay />
             <DrawerContent>
-              <DrawerCloseButton size="sm" />
+              <DrawerCloseButton
+                _focus={{
+                  boxShadow: "0 0 0 3px #24db14",
+                }}
+                size="sm"
+              />
               <DrawerHeader>
                 <Image
                   width="120px"

@@ -24,7 +24,7 @@ const Landing = (): JSX.Element => {
     <Box>
       <Container maxW="container.xl">
         <Grid
-          h={{ base: "55vh", md: "80vh" }}
+          h={{ base: "50vh", md: "80vh" }}
           gap="5em"
           alignItems="center"
           justifyContent="space-between"
@@ -35,12 +35,12 @@ const Landing = (): JSX.Element => {
           }}
         >
           <GridItem color="#fff" textAlign={{ base: "center", md: "inherit" }}>
-            <Heading fontSize={{ base: "30px", md: "49px" }}>
+            <Heading fontSize={{ base: "25px", md: "49px" }}>
               Prognosis <chakra.span color="#8ef985">Technology</chakra.span>{" "}
             </Heading>
             <Text
-              fontSize={{ base: "15px", md: "20px" }}
-              my={2}
+              fontSize={{ base: "13px", md: "20px" }}
+              my={{ base: 1, md: 2 }}
               fontWeight="semibold"
             >
               Enterprises innovative software solutions
@@ -48,7 +48,9 @@ const Landing = (): JSX.Element => {
             <Text
               fontSize={{ base: "11px", md: "14px" }}
               fontWeight="light"
-              lineHeight="23px"
+              width={{ base: "90%", md: "100%" }}
+              m={{ base: "0 auto", md: "0" }}
+              lineHeight={{ base: "inherit", md: "22px" }}
             >
               Prognosis Technologies (PS) is a software development and
               implementation service provider using cutting edge technologies.
