@@ -32,9 +32,9 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: xx-large;
 }
 
-@media screen and (min-width: "30em") {
+@media only screen and (max-width: 780px) {
   .swiper-button-next:after,
   .swiper-button-prev:after {
-    font-size: x-large;
+    display: none;
   }
 }

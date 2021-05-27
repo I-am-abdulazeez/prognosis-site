@@ -9,7 +9,6 @@ import {
 } from "@chakra-ui/layout";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import { chakra } from "@chakra-ui/system";
-import { useTheme } from "@emotion/react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { ChakraImage } from "../utils";
 
@@ -18,13 +17,12 @@ const Landing = (): JSX.Element => {
     base: "none",
     md: "block",
   });
-  const buttonSize = useBreakpointValue({ base: "xs", md: "sm" });
 
   return (
     <Box>
       <Container maxW="container.xl">
         <Grid
-          h={{ base: "50vh", md: "80vh" }}
+          h={{ base: "70vh", md: "80vh" }}
           gap="5em"
           alignItems="center"
           justifyContent="space-between"
@@ -40,7 +38,7 @@ const Landing = (): JSX.Element => {
             </Heading>
 
             <Text
-              mt={1}
+              mb={{ base: 4, md: 5 }}
               fontSize={{ base: "13px", md: "18px" }}
               fontWeight="semibold"
             >
@@ -50,7 +48,7 @@ const Landing = (): JSX.Element => {
               fontSize={{ base: "sm", md: "15px" }}
               fontWeight="light"
               width={{ base: "90%", md: "100%" }}
-              my={{ base: 1, md: 5 }}
+              m="0 auto"
               lineHeight={{ base: "1.6", md: "1.7" }}
             >
               Prognosis Technologies (PS) is a software development and
@@ -60,7 +58,8 @@ const Landing = (): JSX.Element => {
               improve their business goals.
             </Text>
             <Button
-              size={buttonSize}
+              size="sm"
+              mt={{ base: 4, md: 5 }}
               color="#1A202C"
               _hover={{
                 bgColor: "#8ef985",

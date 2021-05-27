@@ -37,7 +37,7 @@ export default function Home(): JSX.Element {
         <Container maxW="container.xl">
           <ScrollAnimation animateIn="animate__slideInUp" duration={0.3}>
             <Heading
-              w={{ base: "400px", md: "50%" }}
+              w={{ base: "320px", md: "50%" }}
               mb={5}
               fontSize={{ base: "25px", md: "4xl" }}
             >

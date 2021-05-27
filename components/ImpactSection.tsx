@@ -13,7 +13,6 @@ import { chakra } from "@chakra-ui/system";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const ImpactSection = (): JSX.Element => {
-  const buttonSize = useBreakpointValue({ base: "xs", md: "sm" });
   return (
     <Box py="4em">
       <Container maxW="container.xl">
@@ -43,7 +42,7 @@ const ImpactSection = (): JSX.Element => {
               optimize their service offerings to end users.
             </Text>
             <Button
-              size={buttonSize}
+              size="sm"
               color="#1A202C"
               _hover={{
                 bgColor: "#8ef985",

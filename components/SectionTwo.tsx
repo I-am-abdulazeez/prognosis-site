@@ -36,15 +36,22 @@ const swiperItems: SwipeDetails[] = [
 ];
 
 const SectionTwo = (): JSX.Element => {
-  const buttonSize = useBreakpointValue({ base: "xs", md: "sm" });
-
   return (
     <Box>
       <Container maxW="container.xl">
-        <Heading textAlign="center" color="#8ef985">
+        <Heading
+          textAlign="center"
+          fontSize={{ base: "25px", md: "4xl" }}
+          color="#8ef985"
+        >
           OUR SOLUTION
         </Heading>
-        <Text color="#fff" fontSize="sm" mt={1} textAlign="center">
+        <Text
+          color="#fff"
+          fontSize={{ base: "sm", md: "15px" }}
+          mt={1}
+          textAlign="center"
+        >
           SOLUTIONS WE HAVE BUILT
         </Text>
         <Swiper
@@ -70,7 +77,7 @@ const SectionTwo = (): JSX.Element => {
               key={i}
               gap={{ base: "0em", md: "4em" }}
               alignItems="center"
-              height={{ base: "550px", md: "500px" }}
+              height={{ base: "600px", md: "500px" }}
             >
               <GridItem
                 justifySelf={{ base: "center", md: "" }}
@@ -105,7 +112,7 @@ const SectionTwo = (): JSX.Element => {
                   {text}
                 </Text>
                 <Button
-                  size={buttonSize}
+                  size="sm"
                   color="#1A202C"
                   _hover={{
                     bgColor: "#8ef985",

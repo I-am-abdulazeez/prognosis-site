@@ -66,7 +66,7 @@ const SectionOne = (): JSX.Element => {
       <Box mt={10}>
         <Container maxW="870px" px={{ base: 0, md: "inherit" }}>
           <SimpleGrid columns={{ base: 1, md: 2 }} gap={8}>
-            <ScrollAnimation animateIn="animate__fadeInUp" duration={1.8}>
+            <ScrollAnimation animateIn="animate__fadeInUp" duration={1.6}>
               <Card
                 icon="/images/it.svg"
                 h="140px"
@@ -75,7 +75,7 @@ const SectionOne = (): JSX.Element => {
                 text="Introduce internet of things to your operations to improve work place safety, reduce operation cost and enhance customer experience."
               />
             </ScrollAnimation>
-            <ScrollAnimation animateIn="animate__fadeInUp" duration={1.8}>
+            <ScrollAnimation animateIn="animate__fadeInUp" duration={1.6}>
               <Card
                 icon="/images/cc.svg"
                 h="140px"

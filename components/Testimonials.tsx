@@ -1,5 +1,7 @@
 import { Avatar } from "@chakra-ui/avatar";
+import { Image } from "@chakra-ui/image";
 import { Box, Flex, Text } from "@chakra-ui/layout";
+import { useBreakpointValue } from "@chakra-ui/media-query";
 import Swiper from "react-id-swiper";
 import { ChakraImage } from "../utils";
 
@@ -37,50 +39,59 @@ const testimonialItems: TestimonialDetails[] = [
   },
 ];
 
-const Testimonials = () => {
+const Testimonials = (): JSX.Element => {
+  const avatarSize = useBreakpointValue({ base: "md", md: "lg" });
+
   return (
-    <Flex justify="center">
-      <Swiper
-        pagination={{
-          el: ".swiper-pagination",
-          clickable: true,
-          dynamicBullets: true,
-        }}
-        lazy={true}
-        autoplay={{
-          delay: 7000,
-        }}
-        spaceBetween={50}
-        grabCursor={true}
-      >
-        {testimonialItems.map(({ text, userName, userDetails }, i) => (
-          <Flex height="450px" justify="center" key={i} direction="column">
-            <ChakraImage width="77.34" height="65.12" src="/images/quote.svg" />
-            <Box justifySelf="center" mt={10}>
-              <Text
-                fontSize={{ base: "sm", md: "15px" }}
-                textAlign="center"
-                width={{ base: "300px", md: "500px" }}
-                m="0 auto"
-              >
-                {text}
-              </Text>
-            </Box>
-            <Box mt={8} mb={4} textAlign="center">
-              <Avatar name={userName} size="lg" />
-            </Box>
-            <Box textAlign="center">
-              <Text fontWeight="bold" fontSize={{ base: "sm", md: "15px" }}>
-                {userName}
-              </Text>
-              <Text color="#718096" fontSize={{ base: "sm", md: "15px" }}>
-                {userDetails}
-              </Text>
-            </Box>
-          </Flex>
-        ))}
-      </Swiper>
-    </Flex>
+    <Swiper
+      pagination={{
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      }}
+      lazy={true}
+      autoplay={{
+        delay: 7000,
+      }}
+      spaceBetween={30}
+      grabCursor={true}
+    >
+      {testimonialItems.map(({ text, userName, userDetails }, i) => (
+        <Flex
+          height={{ base: "420px", md: "450px" }}
+          justify="center"
+          key={i}
+          direction="column"
+        >
+          <Image
+            width={{ base: "66.34", md: "77.34" }}
+            height="65.12"
+            src="/images/quote.svg"
+          />
+          <Box justifySelf="center" mt={10}>
+            <Text
+              fontSize={{ base: "sm", md: "15px" }}
+              textAlign="center"
+              width={{ base: "300px", md: "500px" }}
+              m="0 auto"
+            >
+              {text}
+            </Text>
+          </Box>
+          <Box mt={8} mb={4} textAlign="center">
+            <Avatar name={userName} size={avatarSize} />
+          </Box>
+          <Box textAlign="center">
+            <Text fontWeight="bold" fontSize={{ base: "sm", md: "15px" }}>
+              {userName}
+            </Text>
+            <Text color="#718096" fontSize={{ base: "sm", md: "15px" }}>
+              {userDetails}
+            </Text>
+          </Box>
+        </Flex>
+      ))}
+    </Swiper>
   );
 };
 
