@@ -1,5 +1,5 @@
 import { Box, HStack, Text } from "@chakra-ui/layout";
-import Image from "next/image";
+import { ChakraImage } from "../utils";
 
 type CardProps = {
   icon: string;
@@ -13,7 +13,7 @@ const Card = ({ icon, title, text, w, h }: CardProps): JSX.Element => {
   return (
     <HStack spacing={7} p={5} boxShadow="md" borderRadius="md">
       <Box>
-        <Image width={w} height={h} src={icon} />
+        <ChakraImage width={w} height={h} src={icon} />
       </Box>
       <Box textAlign="left">
         <Text fontSize={{ base: "18px", md: "20px" }} fontWeight="bold" mb={1}>

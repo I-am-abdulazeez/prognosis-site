@@ -1,1 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+  width: 3px;
+  background: #ccc;
+}
+body::-webkit-scrollbar-thumb {
+  background: #909090;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(175, 175, 175, 0.8);
+  border-radius: 10px;
+}
+
+.swiper-pagination-bullet {
+  background: #1fa813;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #1fa813;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: xx-large;
+}
+
+@media screen and (min-width: "30em") {
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: x-large;
+  }
+}

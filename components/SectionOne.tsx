@@ -3,7 +3,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { chakra } from "@chakra-ui/system";
 import Card from "./Card";
 
-const SectionOne = () => {
+const SectionOne = (): JSX.Element => {
   return (
     <Container maxW="container.xl">
       <Text
@@ -21,9 +21,10 @@ const SectionOne = () => {
       </ScrollAnimation>
       <Box w={{ base: "100%", sm: "80%" }} m="0 auto">
         <Text
-          fontSize={{ base: "11px", md: "inherit" }}
+          fontSize={{ base: "sm", md: "15px" }}
           w={{ base: "90%", md: "" }}
           m={{ base: "0 auto", md: "" }}
+          lineHeight="1.7"
         >
           Every business today faces the need of undergoing Digital
           Transformation. Our solutions are designed to help our clients
@@ -42,7 +43,7 @@ const SectionOne = () => {
             text="Our superb and customized analytics software keeps you informed and articulate as you build customer relationship."
           />
         </ScrollAnimation>
-        <ScrollAnimation animateIn="animate__fadeInUp">
+        <ScrollAnimation animateIn="animate__fadeInUp" duration={1.2}>
           <Card
             icon="/images/ai.svg"
             h="130px"
@@ -51,11 +52,11 @@ const SectionOne = () => {
             text="Our experts have the experience and required expertise in Machine Learning to give you real time and automated assistance."
           />
         </ScrollAnimation>
-        <ScrollAnimation animateIn="animate__fadeInUp">
+        <ScrollAnimation animateIn="animate__fadeInUp" duration={1.6}>
           <Card
             icon="/images/pa.svg"
-            h="130px"
-            w="130px"
+            h="140px"
+            w="140px"
             title="Predictive Analytics"
             text="Our team of Data engineers and analyst will help you develop a data strategy, which will help you stay ahead of trends and keep your organisation agile."
           />
@@ -65,7 +66,7 @@ const SectionOne = () => {
       <Box mt={10}>
         <Container maxW="870px" px={{ base: 0, md: "inherit" }}>
           <SimpleGrid columns={{ base: 1, md: 2 }} gap={8}>
-            <ScrollAnimation animateIn="animate__fadeInUp">
+            <ScrollAnimation animateIn="animate__fadeInUp" duration={1.8}>
               <Card
                 icon="/images/it.svg"
                 h="140px"
@@ -74,7 +75,7 @@ const SectionOne = () => {
                 text="Introduce internet of things to your operations to improve work place safety, reduce operation cost and enhance customer experience."
               />
             </ScrollAnimation>
-            <ScrollAnimation animateIn="animate__fadeInUp">
+            <ScrollAnimation animateIn="animate__fadeInUp" duration={1.8}>
               <Card
                 icon="/images/cc.svg"
                 h="140px"

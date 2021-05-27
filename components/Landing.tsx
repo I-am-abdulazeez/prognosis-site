@@ -7,13 +7,13 @@ import {
   Heading,
   Text,
 } from "@chakra-ui/layout";
-import Image from "next/image";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import { chakra } from "@chakra-ui/system";
 import { useTheme } from "@emotion/react";
+import ScrollAnimation from "react-animate-on-scroll";
+import { ChakraImage } from "../utils";
 
 const Landing = (): JSX.Element => {
-  const theme = useTheme();
   const showImage = useBreakpointValue({
     base: "none",
     md: "block",
@@ -35,22 +35,23 @@ const Landing = (): JSX.Element => {
           }}
         >
           <GridItem color="#fff" textAlign={{ base: "center", md: "inherit" }}>
-            <Heading fontSize={{ base: "25px", md: "49px" }}>
+            <Heading fontSize={{ base: "25px", md: "45px" }}>
               Prognosis <chakra.span color="#8ef985">Technology</chakra.span>{" "}
             </Heading>
+
             <Text
-              fontSize={{ base: "13px", md: "20px" }}
-              my={{ base: 1, md: 2 }}
+              mt={1}
+              fontSize={{ base: "13px", md: "18px" }}
               fontWeight="semibold"
             >
               Enterprises innovative software solutions
             </Text>
             <Text
-              fontSize={{ base: "11px", md: "14px" }}
+              fontSize={{ base: "sm", md: "15px" }}
               fontWeight="light"
               width={{ base: "90%", md: "100%" }}
-              m={{ base: "0 auto", md: "0" }}
-              lineHeight={{ base: "inherit", md: "22px" }}
+              my={{ base: 1, md: 5 }}
+              lineHeight={{ base: "1.6", md: "1.7" }}
             >
               Prognosis Technologies (PS) is a software development and
               implementation service provider using cutting edge technologies.
@@ -59,7 +60,6 @@ const Landing = (): JSX.Element => {
               improve their business goals.
             </Text>
             <Button
-              mt={5}
               size={buttonSize}
               color="#1A202C"
               _hover={{
@@ -77,12 +77,14 @@ const Landing = (): JSX.Element => {
             </Button>
           </GridItem>
           <GridItem justifySelf="end" display={showImage}>
-            <Image
-              width="400px"
-              height="400.26px"
-              src="/images/landing.svg"
-              alt="logo"
-            />
+            <ScrollAnimation animateOnce={false} animateIn="animate__pulse">
+              <ChakraImage
+                width="400px"
+                height="400.26px"
+                src="/images/landing.svg"
+                alt="logo"
+              />
+            </ScrollAnimation>
           </GridItem>
         </Grid>
       </Container>

@@ -10,9 +10,9 @@ import {
   DrawerOverlay,
 } from "@chakra-ui/modal";
 import { useRouter } from "next/dist/client/router";
-import Image from "next/image";
 import Link from "next/link";
 import { HiMenuAlt3 } from "react-icons/hi";
+import { ChakraImage } from "../utils";
 
 const Navbar = (): JSX.Element => {
   const router = useRouter();
@@ -32,7 +32,7 @@ const Navbar = (): JSX.Element => {
       top={0}
       right={0}
       bg="white"
-      zIndex={1}
+      zIndex={2}
       w="full"
       position="sticky"
       boxShadow="sm"
@@ -42,7 +42,7 @@ const Navbar = (): JSX.Element => {
         <Flex align="center" justify="space-between">
           <Link href="/">
             <a>
-              <Image
+              <ChakraImage
                 width="140px"
                 height="66px"
                 src="/images/Prognosis.png"
@@ -67,11 +67,11 @@ const Navbar = (): JSX.Element => {
             gridGap="0.9em"
             justify="space-between"
           >
-            {links.map((link, i) => (
-              <Link href={link.path} key={i}>
+            {links.map(({ path, text }, i) => (
+              <Link href={path} key={i}>
                 <Button
                   size="sm"
-                  bgColor={router.pathname === link.path ? "#b9fbb4" : ""}
+                  bgColor={router.pathname === path ? "#b9fbb4" : ""}
                   _hover={{
                     bgColor: "#b9fbb4",
                   }}
@@ -83,7 +83,7 @@ const Navbar = (): JSX.Element => {
                   }}
                   variant="ghost"
                 >
-                  {link.text}
+                  {text}
                 </Button>
               </Link>
             ))}
@@ -104,7 +104,7 @@ const Navbar = (): JSX.Element => {
                 size="sm"
               />
               <DrawerHeader>
-                <Image
+                <ChakraImage
                   width="120px"
                   height="55px"
                   src="/images/Prognosis.png"
@@ -112,13 +112,13 @@ const Navbar = (): JSX.Element => {
                 />
               </DrawerHeader>
               <DrawerBody>
-                <Stack gridGap="0.6rem">
-                  {links.map((link, i) => (
-                    <Link href={link.path} key={i}>
+                <Stack>
+                  {links.map(({ text, path }, i) => (
+                    <Link href={path} key={i}>
                       <Button
                         size="sm"
                         justifyContent="flex-start"
-                        bgColor={router.pathname === link.path ? "#b9fbb4" : ""}
+                        bgColor={router.pathname === path ? "#b9fbb4" : ""}
                         _hover={{
                           bgColor: "#b9fbb4",
                         }}
@@ -130,7 +130,7 @@ const Navbar = (): JSX.Element => {
                         }}
                         variant="ghost"
                       >
-                        {link.text}
+                        {text}
                       </Button>
                     </Link>
                   ))}
