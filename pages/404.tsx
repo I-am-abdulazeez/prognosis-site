@@ -1,4 +1,5 @@
 import { Button } from "@chakra-ui/button";
+import { Image } from "@chakra-ui/image";
 import { Box, Flex, Text } from "@chakra-ui/layout";
 import Head from "next/head";
 import Link from "next/link";
@@ -13,9 +14,9 @@ const ErrorPage = (): JSX.Element => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box m="0 auto" w="120px" mb={5}>
-        <ChakraImage
-          width="120px"
-          height="120px"
+        <Image
+          width={{ base: "80px", md: "120px" }}
+          height={{ base: "80px", md: "120px" }}
           src="/images/sad.svg"
           alt="Sad Svg"
         />
@@ -24,6 +25,7 @@ const ErrorPage = (): JSX.Element => {
       <Link href="/">
         <Button
           size="sm"
+          rounded="full"
           _focus={{
             boxShadow: "0 0 0 3px #63f756",
           }}

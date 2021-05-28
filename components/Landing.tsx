@@ -59,6 +59,7 @@ const Landing = (): JSX.Element => {
             </Text>
             <Button
               size="sm"
+              rounded="full"
               mt={{ base: 4, md: 5 }}
               color="#1A202C"
               _hover={{

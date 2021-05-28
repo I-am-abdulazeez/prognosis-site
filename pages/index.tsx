@@ -1,6 +1,9 @@
 import { Box, Container, Heading, Text } from "@chakra-ui/layout";
 import Head from "next/head";
 import ScrollAnimation from "react-animate-on-scroll";
+import Client from "../components/Client";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import ImpactSection from "../components/ImpactSection";
 import Landing from "../components/Landing";
 import Navbar from "../components/Navbar";
@@ -20,10 +23,10 @@ export default function Home(): JSX.Element {
       <Box bgColor="#1A202C">
         <Landing />
       </Box>
-      <Box py={10} textAlign="center">
+      <Box py="4em" textAlign="center">
         <SectionOne />
       </Box>
-      <Box py={10} bgColor="#1A202C">
+      <Box py="4em" bgColor="#1A202C">
         <SectionTwo />
       </Box>
       <Box
@@ -60,7 +63,15 @@ export default function Home(): JSX.Element {
       <Box bg="#EEF2F6" py={6}>
         <Testimonials />
       </Box>
-      <Box></Box>
+      <Box py="4em">
+        <Client />
+      </Box>
+      <Box py="4em" bg="#87F97D">
+        <Contact />
+      </Box>
+      <Box pt="4em" pb="2em" bgColor="#1A202C">
+        <Footer />
+      </Box>
     </Box>
   );
 }

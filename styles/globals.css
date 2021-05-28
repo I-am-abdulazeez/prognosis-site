@@ -6,7 +6,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
   width: 3px;
-  background: #ccc;
+  background: #fff;
 }
 body::-webkit-scrollbar-thumb {
   background: #909090;
@@ -19,12 +19,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .swiper-pagination-bullet {
-  background: #1fa813;
+  background: #0fbf44;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #1fa813;
+  color: #0fbf44;
 }
 
 .swiper-button-next:after,
@@ -37,4 +37,9 @@ body::-webkit-scrollbar-thumb:hover {
   .swiper-button-prev:after {
     display: none;
   }
+}
+
+a {
+  font-size: 14px !important;
+  font-weight: 500;
 }

@@ -113,6 +113,7 @@ const SectionTwo = (): JSX.Element => {
                 </Text>
                 <Button
                   size="sm"
+                  rounded="full"
                   color="#1A202C"
                   _hover={{
                     bgColor: "#8ef985",

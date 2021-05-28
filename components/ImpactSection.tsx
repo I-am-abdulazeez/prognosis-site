@@ -8,7 +8,6 @@ import {
   Heading,
   Text,
 } from "@chakra-ui/layout";
-import { useBreakpointValue } from "@chakra-ui/media-query";
 import { chakra } from "@chakra-ui/system";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -43,6 +42,7 @@ const ImpactSection = (): JSX.Element => {
             </Text>
             <Button
               size="sm"
+              rounded="full"
               color="#1A202C"
               _hover={{
                 bgColor: "#8ef985",
@@ -51,7 +51,7 @@ const ImpactSection = (): JSX.Element => {
                 bgColor: "#8ef985",
               }}
               _focus={{
-                boxShadow: "0 0 0 3px #24db14",
+                boxShadow: "0 0 0 3px #a2f69b",
               }}
               bgColor="#8ef985"
             >

@@ -1,6 +1,6 @@
 import { Button, IconButton } from "@chakra-ui/button";
 import { useDisclosure } from "@chakra-ui/hooks";
-import { Box, Container, Flex, Stack } from "@chakra-ui/layout";
+import { Box, Container, Flex, Stack, StackDivider } from "@chakra-ui/layout";
 import {
   Drawer,
   DrawerBody,
@@ -56,8 +56,11 @@ const Navbar = (): JSX.Element => {
               icon={<HiMenuAlt3 size="22px" />}
               onClick={onOpen}
               size="sm"
+              rounded="full"
+              variant="solid"
+              colorScheme="primary"
               _focus={{
-                boxShadow: "0 0 0 3px #24db14",
+                boxShadow: "0 0 0 3px #a2f69b",
               }}
             />
           </Box>
@@ -71,9 +74,12 @@ const Navbar = (): JSX.Element => {
               <Link href={path} key={i}>
                 <Button
                   size="sm"
-                  bgColor={router.pathname === path ? "#b9fbb4" : ""}
+                  rounded="full"
+                  color={router.pathname === path ? "#0f7a06" : ""}
+                  bgColor={router.pathname === path ? "#e3ffe2" : ""}
                   _hover={{
-                    bgColor: "#b9fbb4",
+                    bgColor: "#e3ffe2",
+                    transition: "all 0.5s ease-in-out",
                   }}
                   _active={{
                     bgColor: "#8ef985",
@@ -102,6 +108,7 @@ const Navbar = (): JSX.Element => {
                   boxShadow: "0 0 0 3px #24db14",
                 }}
                 size="sm"
+                rounded="full"
               />
               <DrawerHeader>
                 <ChakraImage
@@ -112,21 +119,23 @@ const Navbar = (): JSX.Element => {
                 />
               </DrawerHeader>
               <DrawerBody>
-                <Stack>
+                <Stack spacing={3}>
                   {links.map(({ text, path }, i) => (
                     <Link href={path} key={i}>
                       <Button
                         size="sm"
+                        rounded="full"
                         justifyContent="flex-start"
-                        bgColor={router.pathname === path ? "#b9fbb4" : ""}
+                        color={router.pathname === path ? "#0f7a06" : ""}
                         _hover={{
-                          bgColor: "#b9fbb4",
+                          bgColor: "#e3ffe2",
+                          transition: "all 0.5s ease-in-out",
                         }}
                         _active={{
                           bgColor: "#8ef985",
                         }}
                         _focus={{
-                          boxShadow: "0 0 0 3px #24db14",
+                          boxShadow: "0 0 0 3px #a2f69b",
                         }}
                         variant="ghost"
                       >

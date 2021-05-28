@@ -18,6 +18,7 @@ import SwiperCore, {
   Autoplay,
   EffectCoverflow,
 } from "swiper";
+import ScrollToTop from "../components/ScrollToTop";
 
 SwiperCore.use([Navigation, Pagination, Lazy, Autoplay, EffectCoverflow]);
 
@@ -31,6 +32,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         height={2}
       />
       <Component {...pageProps} />
+      <ScrollToTop />
     </ChakraProvider>
   );
 };
