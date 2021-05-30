@@ -30,11 +30,7 @@ const Contact = (): JSX.Element => {
             >
               Let us deliver on your project needs
             </Heading>
-            <Text
-              w={{ base: "100%", md: "80%" }}
-              fontSize={{ base: "sm", md: "15px" }}
-              lineHeight="1.7"
-            >
+            <Text w={{ base: "100%", md: "80%" }} textStyle="defaultText">
               Our team of professional developers and business analyst are
               always willing to hear about your project need and design custom
               solutions that are guaranteed to give your business the winning

@@ -21,10 +21,9 @@ const SectionOne = (): JSX.Element => {
       </ScrollAnimation>
       <Box w={{ base: "100%", sm: "80%" }} m="0 auto">
         <Text
-          fontSize={{ base: "sm", md: "15px" }}
+          textStyle="defaultText"
           w={{ base: "90%", md: "" }}
           m={{ base: "0 auto", md: "" }}
-          lineHeight="1.7"
         >
           Every business today faces the need of undergoing Digital
           Transformation. Our solutions are designed to help our clients
@@ -52,7 +51,7 @@ const SectionOne = (): JSX.Element => {
             text="Our experts have the experience and required expertise in Machine Learning to give you real time and automated assistance."
           />
         </ScrollAnimation>
-        <ScrollAnimation animateIn="animate__fadeInUp" duration={1.6}>
+        <ScrollAnimation animateIn="animate__fadeInUp" duration={1.4}>
           <Card
             icon="/images/pa.svg"
             h="140px"

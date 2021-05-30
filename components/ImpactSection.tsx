@@ -17,7 +17,7 @@ const ImpactSection = (): JSX.Element => {
       <Container maxW="container.xl">
         <Grid
           templateColumns={{ base: "repeat(1, 1fr)", md: "60% 40%" }}
-          gap="2em"
+          gap="0.3em"
         >
           <GridItem>
             <ScrollAnimation animateIn="animate__fadeInLeft" duration={0.8}>
@@ -31,9 +31,8 @@ const ImpactSection = (): JSX.Element => {
             </ScrollAnimation>
             <Text
               my={5}
-              fontSize={{ base: "sm", md: "15px" }}
+              textStyle="defaultText"
               w={{ base: "100%", md: "63%" }}
-              lineHeight="1.7"
             >
               Prognosis builds its technology with the ultimate purpose of
               helping business serve their clients optimally. Through our custom

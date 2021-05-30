@@ -39,7 +39,11 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
+.swiper-container-horizontal > .swiper-scrollbar {
+  background-color: #eeeeee;
+}
+
 a {
-  font-size: 14px !important;
+  font-size: 14px;
   font-weight: 500;
 }

@@ -46,12 +46,7 @@ const SectionTwo = (): JSX.Element => {
         >
           OUR SOLUTION
         </Heading>
-        <Text
-          color="#fff"
-          fontSize={{ base: "sm", md: "15px" }}
-          mt={1}
-          textAlign="center"
-        >
+        <Text color="#fff" textStyle="defaultText" mt={1} textAlign="center">
           SOLUTIONS WE HAVE BUILT
         </Text>
         <Swiper

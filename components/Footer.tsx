@@ -39,7 +39,7 @@ const Footer = (): JSX.Element => {
                   rounded="lg"
                 />
               </Box>
-              <Text lineHeight="1.7" fontSize={{ base: "sm", md: "15px" }}>
+              <Text textStyle="defaultText">
                 Prognosis Technologies (PS) is a software development and
                 implementation service provider using cutting edge technologies.
                 Since 2013, we have been helping companies and organization
@@ -63,19 +63,17 @@ const Footer = (): JSX.Element => {
                 <Heading fontSize={{ base: "16px", md: "xl" }}>
                   OUR SOLUTIONS
                 </Heading>
-                <Text lineHeight="1.7" fontSize={{ base: "sm", md: "15px" }}>
+                <Text textStyle="defaultText">
                   Human Resource Management Solution
                 </Text>
-                <Text lineHeight="1.7" fontSize={{ base: "sm", md: "15px" }}>
+                <Text textStyle="defaultText">
                   Insurance Broker Management Platform{" "}
                 </Text>
-                <Text lineHeight="1.7" fontSize={{ base: "sm", md: "15px" }}>
+                <Text textStyle="defaultText">
                   HMO Insurance Management Solutions{" "}
                 </Text>
-                <Text lineHeight="1.7" fontSize={{ base: "sm", md: "15px" }}>
-                  General Insurance
-                </Text>
-                <Text lineHeight="1.7" fontSize={{ base: "sm", md: "15px" }}>
+                <Text textStyle="defaultText">General Insurance</Text>
+                <Text textStyle="defaultText">
                   Accounting Software Solution
                 </Text>
               </Box>
@@ -83,28 +81,13 @@ const Footer = (): JSX.Element => {
                 <Heading fontSize={{ base: "16px", md: "xl" }}>
                   QUICKS LINKS
                 </Heading>
-                <Text
-                  as={Link}
-                  href="/"
-                  lineHeight="1.7"
-                  fontSize={{ base: "sm", md: "15px" }}
-                >
+                <Text as={Link} href="/" textStyle="defaultText">
                   Home
                 </Text>
-                <Text
-                  as={Link}
-                  href="/about"
-                  lineHeight="1.7"
-                  fontSize={{ base: "sm", md: "15px" }}
-                >
+                <Text as={Link} href="/about" textStyle="defaultText">
                   About Us
                 </Text>
-                <Text
-                  as={Link}
-                  href="/services"
-                  lineHeight="1.7"
-                  fontSize={{ base: "sm", md: "15px" }}
-                >
+                <Text as={Link} href="/services" textStyle="defaultText">
                   Our Services
                 </Text>
                 <Text

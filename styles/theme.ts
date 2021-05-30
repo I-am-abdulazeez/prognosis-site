@@ -8,6 +8,12 @@ const theme = extendTheme({
     heading: FontFamily,
     mono: FontFamily,
   },
+  textStyles: {
+    defaultText: {
+      lineHeight: "1.7",
+      fontSize: ["sm", "15px"],
+    },
+  },
   colors: {
     primary: {
       50: "#e3ffe2",
