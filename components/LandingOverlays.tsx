@@ -31,6 +31,7 @@ const LandingOverlays = ({
         direction="column"
         justify="center"
         textAlign="center"
+        px={{ base: "1.5em", md: "" }}
         h={{ base: "30vh", md: "40vh" }}
       >
         <Text

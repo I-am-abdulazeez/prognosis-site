@@ -13,6 +13,9 @@ import LandingOverlays from "../components/LandingOverlays";
 import Navbar from "../components/Navbar";
 import { Box, forwardRef } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import TabSection from "../components/TabSection";
 
 interface SwipeCardDetails {
   imageSrc: string;
@@ -74,7 +77,10 @@ const services = (): JSX.Element => {
       />
       <Box py="4em">
         <Container maxW="container.xl">
-          <Grid templateColumns={{ base: "repeat(1, 1fr)", md: "60% 40%" }}>
+          <Grid
+            gap={{ base: "1.5em", md: "" }}
+            templateColumns={{ base: "repeat(1, 1fr)", md: "60% 40%" }}
+          >
             <GridItem>
               <Box>
                 <Heading
@@ -153,7 +159,7 @@ const services = (): JSX.Element => {
             {swiperItems.map(({ text, imageSrc, title, link }, i) => (
               <Box height="300px" cursor="pointer" key={i}>
                 <MotionBox
-                  height="200px"
+                  height={{ base: "250px", md: "200px" }}
                   p={6}
                   bgPos="center"
                   bg={`linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${imageSrc})`}
@@ -166,7 +172,6 @@ const services = (): JSX.Element => {
                   color="white"
                 >
                   <Heading
-                    lineHeight="1.7"
                     as="a"
                     href={link}
                     fontSize={{ base: "25px", md: "lg" }}
@@ -185,6 +190,59 @@ const services = (): JSX.Element => {
             ))}
           </ReactIdSwiper>
         </Container>
+      </Box>
+      <Box py="4em" overflowX="scroll">
+        <TabSection />
+      </Box>
+      <Box py="4em" bg="#EEF2F6">
+        <Container maxW="container.xl">
+          <Grid
+            gap="4em"
+            alignItems="center"
+            templateColumns={{ base: "repeat(1, 1fr)", md: "40% 60%" }}
+          >
+            <GridItem>
+              <AspectRatio
+                borderRadius="md"
+                h="18em"
+                maxW="500px"
+                ratio={4 / 3}
+              >
+                <iframe
+                  title="Prognosis Site Intro"
+                  src="https://www.youtube.com/embed/Qq6LT7lVGM4"
+                  allowFullScreen
+                />
+              </AspectRatio>
+            </GridItem>
+            <GridItem>
+              <Box>
+                <Heading fontSize={{ base: "25px", md: "4xl" }}>
+                  Transform Your Business with {""}
+                  <chakra.span color="#0FBF44">
+                    our Enterprise Resource Planning (ERP) Solutions
+                  </chakra.span>
+                </Heading>
+                <Text mt={5} textStyle="defaultText">
+                  Creating one-of-a-kind software for corporate customers is a
+                  cornerstone of our expertise. Our ERP solutions are built to
+                  hone critical business processes and functions, including
+                  inventory management, accounting, human resources,
+                  construction management, and more. Our team of top-notch
+                  business analyst, quality assurance specialist, and software
+                  engineers are equipped to create dynamic web systems for our
+                  customers irrespective of company size or industry.
+                </Text>
+              </Box>
+            </GridItem>
+          </Grid>
+        </Container>
+      </Box>
+      <Box py="4em" bg="#87F97D">
+        <Contact />
+      </Box>
+      <Box pt="4em" pb="2em" bgColor="#1A202C">
+        <Footer />
       </Box>
     </Box>
   );

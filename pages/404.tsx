@@ -3,7 +3,6 @@ import { Image } from "@chakra-ui/image";
 import { Box, Flex, Text } from "@chakra-ui/layout";
 import Head from "next/head";
 import Link from "next/link";
-import { ChakraImage } from "../utils";
 
 const ErrorPage = (): JSX.Element => {
   return (
@@ -13,7 +12,7 @@ const ErrorPage = (): JSX.Element => {
         <meta name="description" content="Prognosis Technology" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box m="0 auto" w="120px" mb={5}>
+      <Box m="0 auto" w={{ base: "80px", md: "120px" }} mb={5}>
         <Image
           width={{ base: "80px", md: "120px" }}
           height={{ base: "80px", md: "120px" }}
