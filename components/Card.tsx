@@ -7,13 +7,14 @@ type CardProps = {
   text: string;
   w: string;
   h: string;
+  alt: string;
 };
 
-const Card = ({ icon, title, text, w, h }: CardProps): JSX.Element => {
+const Card = ({ icon, title, text, w, h, alt }: CardProps): JSX.Element => {
   return (
     <HStack spacing={7} p={5} boxShadow="md" borderRadius="md">
       <Box>
-        <ChakraImage width={w} height={h} src={icon} />
+        <ChakraImage width={w} height={h} src={icon} alt={alt} />
       </Box>
       <Box textAlign="left">
         <Text fontSize={{ base: "18px", md: "20px" }} fontWeight="bold" mb={1}>

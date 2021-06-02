@@ -1,5 +1,5 @@
 import { Image } from "@chakra-ui/image";
-import { Box, Container, Heading, SimpleGrid, Stack } from "@chakra-ui/layout";
+import { Container, Heading, SimpleGrid } from "@chakra-ui/layout";
 
 const Client = (): JSX.Element => {
   return (
@@ -11,14 +11,18 @@ const Client = (): JSX.Element => {
         Clients who trust us
       </Heading>
 
-      <SimpleGrid columns={{ base: 3, sm: 4, md: 7 }} spacing={10} mt={14}>
-        <Image boxSize="100px" src="/images/client-1.svg" />
-        <Image boxSize="100px" src="/images/client-1.svg" />
-        <Image boxSize="100px" src="/images/client-1.svg" />
-        <Image boxSize="100px" src="/images/client-1.svg" />
-        <Image boxSize="100px" src="/images/client-1.svg" />
-        <Image boxSize="100px" src="/images/client-1.svg" />
-        <Image boxSize="100px" src="/images/client-1.svg" />
+      <SimpleGrid
+        columns={{ base: 3, sm: 4, md: 7 }}
+        spacing={{ base: "1em", md: 10 }}
+        mt={{ base: 7, md: 14 }}
+      >
+        <Image boxSize="100px" src="/images/client-1.svg" alt="client-1" />
+        <Image boxSize="100px" src="/images/client-1.svg" alt="client-1" />
+        <Image boxSize="100px" src="/images/client-1.svg" alt="client-1" />
+        <Image boxSize="100px" src="/images/client-1.svg" alt="client-1" />
+        <Image boxSize="100px" src="/images/client-1.svg" alt="client-1" />
+        <Image boxSize="100px" src="/images/client-1.svg" alt="client-1" />
+        <Image boxSize="100px" src="/images/client-1.svg" alt="client-1" />
       </SimpleGrid>
     </Container>
   );

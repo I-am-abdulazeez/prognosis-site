@@ -15,8 +15,17 @@ export default function Home(): JSX.Element {
   return (
     <Box>
       <Head>
-        <title>Home | Prognosis Technology</title>
-        <meta name="description" content="Prognosis Technology" />
+        <title>Home | Prognosis Technologies Limited</title>
+        <meta
+          name="description"
+          content="Home Prognosis Technologies Limited"
+        />
+        <meta property="og:title" content="Pronosis Technologies Limited" />
+        <meta
+          property="og:description"
+          content="What we do | Pronosis Technologies Limited"
+        />
+        <meta property="og:image" content="/images/Prognosis.png" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />

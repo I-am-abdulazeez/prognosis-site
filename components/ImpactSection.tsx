@@ -17,7 +17,7 @@ const ImpactSection = (): JSX.Element => {
       <Container maxW="container.xl">
         <Grid
           templateColumns={{ base: "repeat(1, 1fr)", md: "60% 40%" }}
-          gap="0.3em"
+          gap={{ base: "2em", md: "0.3em" }}
         >
           <GridItem>
             <ScrollAnimation animateIn="animate__fadeInLeft" duration={0.8}>

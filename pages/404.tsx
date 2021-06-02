@@ -8,8 +8,20 @@ const ErrorPage = (): JSX.Element => {
   return (
     <Flex h="100vh" flexDir="column" justify="center" align="center">
       <Head>
-        <title>404 | Prognosis Technology</title>
-        <meta name="description" content="Prognosis Technology" />
+        <title>404 Page | Prognosis Technologies Limited</title>
+        <meta
+          name="description"
+          content="Page Not Found Prognosis Technologies Limited"
+        />
+        <meta
+          property="og:title"
+          content="Page Not Found Pronosis Technologies Limited"
+        />
+        <meta
+          property="og:description"
+          content="Page does not Exist | Pronosis Technologies Limited"
+        />
+        <meta property="og:image" content="/images/sad.svg" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box m="0 auto" w={{ base: "80px", md: "120px" }} mb={5}>

@@ -35,6 +35,7 @@ const SectionOne = (): JSX.Element => {
       <SimpleGrid columns={{ base: 1, md: 3 }} mt={10} gap={8}>
         <ScrollAnimation animateIn="animate__fadeInUp">
           <Card
+            alt="Data Processing & Analysis"
             icon="/images/dp.svg"
             h="130px"
             w="130px"
@@ -44,6 +45,7 @@ const SectionOne = (): JSX.Element => {
         </ScrollAnimation>
         <ScrollAnimation animateIn="animate__fadeInUp" duration={1.2}>
           <Card
+            alt="Artificial Intelligence"
             icon="/images/ai.svg"
             h="130px"
             w="130px"
@@ -53,6 +55,7 @@ const SectionOne = (): JSX.Element => {
         </ScrollAnimation>
         <ScrollAnimation animateIn="animate__fadeInUp" duration={1.4}>
           <Card
+            alt="Predictive Analytics"
             icon="/images/pa.svg"
             h="140px"
             w="140px"
@@ -67,6 +70,7 @@ const SectionOne = (): JSX.Element => {
           <SimpleGrid columns={{ base: 1, md: 2 }} gap={8}>
             <ScrollAnimation animateIn="animate__fadeInUp" duration={1.6}>
               <Card
+                alt="Internet of Things"
                 icon="/images/it.svg"
                 h="140px"
                 w="140px"
@@ -76,6 +80,7 @@ const SectionOne = (): JSX.Element => {
             </ScrollAnimation>
             <ScrollAnimation animateIn="animate__fadeInUp" duration={1.6}>
               <Card
+                alt="Cloud Computing"
                 icon="/images/cc.svg"
                 h="140px"
                 w="140px"

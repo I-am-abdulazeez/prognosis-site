@@ -13,8 +13,20 @@ const about = (): JSX.Element => {
   return (
     <Box>
       <Head>
-        <title>About | Prognosis Technology</title>
-        <meta name="description" content="About Prognosis Technology" />
+        <title>About | Prognosis Technologies Limited</title>
+        <meta
+          name="description"
+          content="About Prognosis Technologies Limited"
+        />
+        <meta
+          property="og:title"
+          content="About Pronosis Technologies Limited"
+        />
+        <meta
+          property="og:description"
+          content="Who we are | Pronosis Technologies Limited"
+        />
+        <meta property="og:image" content="/images/Prognosis.png" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />

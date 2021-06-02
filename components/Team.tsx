@@ -48,7 +48,7 @@ const Team = (): JSX.Element => {
         <SimpleGrid spacing={3} mt={9} columns={{ base: 1, md: 3 }}>
           {ourTeam.map(
             ({ userText, userAvatar, userPosition, username }, i) => (
-              <ScrollAnimation animateIn="animate__fadeInUp">
+              <ScrollAnimation animateIn="animate__fadeInUp" key={i}>
                 <Box
                   rounded="lg"
                   _hover={{

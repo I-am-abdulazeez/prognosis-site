@@ -63,8 +63,20 @@ const services = (): JSX.Element => {
   return (
     <Box>
       <Head>
-        <title>Services | Prognosis Technology</title>
-        <meta name="description" content="Services Prognosis Technology" />
+        <title>Services | Prognosis Technologies Limited</title>
+        <meta
+          name="description"
+          content="Services Prognosis Technologies Limited"
+        />
+        <meta
+          property="og:title"
+          content="Services | Pronosis Technologies Limited"
+        />
+        <meta
+          property="og:description"
+          content="What we do | Pronosis Technologies Limited"
+        />
+        <meta property="og:image" content="/images/Prognosis.png" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
@@ -191,7 +203,7 @@ const services = (): JSX.Element => {
           </ReactIdSwiper>
         </Container>
       </Box>
-      <Box py="4em" overflowX="scroll">
+      <Box py="4em">
         <TabSection />
       </Box>
       <Box py="4em" bg="#EEF2F6">

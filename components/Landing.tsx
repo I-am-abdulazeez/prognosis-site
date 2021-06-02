@@ -32,7 +32,12 @@ const Landing = (): JSX.Element => {
             md: "repeat(2, 1fr)",
           }}
         >
-          <GridItem color="#fff" textAlign={{ base: "center", md: "inherit" }}>
+          <GridItem
+            width={{ base: "90%", md: "100%" }}
+            m="0 auto"
+            color="#fff"
+            textAlign={{ base: "left", md: "inherit" }}
+          >
             <Heading fontSize={{ base: "25px", md: "45px" }}>
               Prognosis <chakra.span color="#8ef985">Technology</chakra.span>{" "}
             </Heading>
@@ -47,8 +52,6 @@ const Landing = (): JSX.Element => {
             <Text
               fontSize={{ base: "sm", md: "15px" }}
               fontWeight="light"
-              width={{ base: "90%", md: "100%" }}
-              m="0 auto"
               lineHeight={{ base: "1.6", md: "1.7" }}
             >
               Prognosis Technologies (PS) is a software development and

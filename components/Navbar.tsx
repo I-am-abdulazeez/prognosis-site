@@ -1,6 +1,7 @@
 import { Button, IconButton } from "@chakra-ui/button";
 import { useDisclosure } from "@chakra-ui/hooks";
-import { Box, Container, Flex, Stack, StackDivider } from "@chakra-ui/layout";
+import { Box, Container, Flex, Stack } from "@chakra-ui/layout";
+import { Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/menu";
 import {
   Drawer,
   DrawerBody,
@@ -17,13 +18,6 @@ import { ChakraImage } from "../utils";
 const Navbar = (): JSX.Element => {
   const router = useRouter();
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const links = [
-    { text: "Home", path: "/" },
-    { text: "About", path: "/about" },
-    { text: "Our Services", path: "/services" },
-    { text: "Our Solutions", path: "/solution" },
-    { text: "Contact", path: "/contact" },
-  ];
 
   return (
     <Box
@@ -70,29 +64,177 @@ const Navbar = (): JSX.Element => {
             gridGap="0.9em"
             justify="space-between"
           >
-            {links.map(({ path, text }, i) => (
-              <Link href={path} key={i}>
-                <Button
-                  size="sm"
-                  rounded="full"
-                  color={router.pathname === path ? "#0f7a06" : ""}
-                  bgColor={router.pathname === path ? "#e3ffe2" : ""}
-                  _hover={{
-                    bgColor: "#e3ffe2",
-                    transition: "all 0.5s ease-in-out",
-                  }}
-                  _active={{
-                    bgColor: "#8ef985",
-                  }}
-                  _focus={{
-                    boxShadow: "0 0 0 3px #24db14",
-                  }}
-                  variant="ghost"
-                >
-                  {text}
-                </Button>
-              </Link>
-            ))}
+            <Link href="/">
+              <Button
+                size="sm"
+                rounded="full"
+                color={router.pathname === "/" ? "#0f7a06" : ""}
+                bgColor={router.pathname === "/" ? "#e3ffe2" : ""}
+                _hover={{
+                  bgColor: "#e3ffe2",
+                  transition: "all 0.5s ease-in-out",
+                }}
+                _active={{
+                  bgColor: "#8ef985",
+                }}
+                _focus={{
+                  boxShadow: "0 0 0 3px #24db14",
+                }}
+                variant="ghost"
+              >
+                Home
+              </Button>
+            </Link>
+
+            <Link href="/about">
+              <Button
+                size="sm"
+                rounded="full"
+                color={router.pathname === "/about" ? "#0f7a06" : ""}
+                bgColor={router.pathname === "/about" ? "#e3ffe2" : ""}
+                _hover={{
+                  bgColor: "#e3ffe2",
+                  transition: "all 0.5s ease-in-out",
+                }}
+                _active={{
+                  bgColor: "#8ef985",
+                }}
+                _focus={{
+                  boxShadow: "0 0 0 3px #24db14",
+                }}
+                variant="ghost"
+              >
+                About
+              </Button>
+            </Link>
+
+            <Link href="/services">
+              <Button
+                size="sm"
+                rounded="full"
+                color={router.pathname === "/services" ? "#0f7a06" : ""}
+                bgColor={router.pathname === "/services" ? "#e3ffe2" : ""}
+                _hover={{
+                  bgColor: "#e3ffe2",
+                  transition: "all 0.5s ease-in-out",
+                }}
+                _active={{
+                  bgColor: "#8ef985",
+                }}
+                _focus={{
+                  boxShadow: "0 0 0 3px #24db14",
+                }}
+                variant="ghost"
+              >
+                Our Services
+              </Button>
+            </Link>
+
+            <Menu>
+              <MenuButton
+                size="sm"
+                rounded="full"
+                _hover={{
+                  bgColor: "#e3ffe2",
+                  transition: "all 0.5s ease-in-out",
+                }}
+                _active={{
+                  bgColor: "#8ef985",
+                }}
+                _focus={{
+                  boxShadow: "0 0 0 3px #24db14",
+                }}
+                variant="ghost"
+                as={Button}
+              >
+                Our Solutions
+              </MenuButton>
+              <MenuList>
+                <Link href="/accounting-software-solution">
+                  <MenuItem
+                    fontSize="sm"
+                    bgColor={
+                      router.pathname === "/accounting-software-solution"
+                        ? "primary.100"
+                        : ""
+                    }
+                  >
+                    Accounting Software Solution
+                  </MenuItem>
+                </Link>
+                <Link href="/general-insurance">
+                  <MenuItem
+                    bgColor={
+                      router.pathname === "/general-insurance"
+                        ? "primary.100"
+                        : ""
+                    }
+                    fontSize="sm"
+                  >
+                    General Insurance Management
+                  </MenuItem>
+                </Link>
+                <Link href="/hmo-insurance-management-solution">
+                  <MenuItem
+                    bgColor={
+                      router.pathname === "/hmo-insurance-management-solution"
+                        ? "primary.100"
+                        : ""
+                    }
+                    fontSize="sm"
+                  >
+                    HMO Insurance Management Solution
+                  </MenuItem>
+                </Link>
+                <Link href="/human-resource-management-solution">
+                  <MenuItem
+                    bgColor={
+                      router.pathname === "/human-resource-management-solution"
+                        ? "primary.100"
+                        : ""
+                    }
+                    fontSize="sm"
+                  >
+                    Human Resource Management Solution
+                  </MenuItem>
+                </Link>
+                <Link href="/insurance-broker-management-platform">
+                  <MenuItem
+                    bgColor={
+                      router.pathname ===
+                      "/insurance-broker-management-platform"
+                        ? "primary.100"
+                        : ""
+                    }
+                    fontSize="sm"
+                  >
+                    Insurance broker Management Platform
+                  </MenuItem>
+                </Link>
+              </MenuList>
+            </Menu>
+
+            <Link href="/contact">
+              <Button
+                size="sm"
+                rounded="full"
+                color={router.pathname === "/contact" ? "#0f7a06" : ""}
+                bgColor={router.pathname === "/contact" ? "#e3ffe2" : ""}
+                _hover={{
+                  bgColor: "#e3ffe2",
+                  transition: "all 0.5s ease-in-out",
+                }}
+                _active={{
+                  bgColor: "#8ef985",
+                }}
+                _focus={{
+                  boxShadow: "0 0 0 3px #24db14",
+                }}
+                variant="ghost"
+              >
+                Contact
+              </Button>
+            </Link>
           </Flex>
           <Drawer
             closeOnOverlayClick={false}
@@ -120,29 +262,180 @@ const Navbar = (): JSX.Element => {
               </DrawerHeader>
               <DrawerBody>
                 <Stack spacing={3}>
-                  {links.map(({ text, path }, i) => (
-                    <Link href={path} key={i}>
-                      <Button
-                        size="sm"
-                        rounded="full"
-                        justifyContent="flex-start"
-                        color={router.pathname === path ? "#0f7a06" : ""}
-                        _hover={{
-                          bgColor: "#e3ffe2",
-                          transition: "all 0.5s ease-in-out",
-                        }}
-                        _active={{
-                          bgColor: "#8ef985",
-                        }}
-                        _focus={{
-                          boxShadow: "0 0 0 3px #a2f69b",
-                        }}
-                        variant="ghost"
-                      >
-                        {text}
-                      </Button>
-                    </Link>
-                  ))}
+                  <Link href="/">
+                    <Button
+                      size="sm"
+                      rounded="full"
+                      justifyContent="flex-start"
+                      color={router.pathname === "/" ? "#0f7a06" : ""}
+                      _hover={{
+                        bgColor: "#e3ffe2",
+                        transition: "all 0.5s ease-in-out",
+                      }}
+                      _active={{
+                        bgColor: "#8ef985",
+                      }}
+                      _focus={{
+                        boxShadow: "0 0 0 3px #a2f69b",
+                      }}
+                      variant="ghost"
+                    >
+                      Home
+                    </Button>
+                  </Link>
+
+                  <Link href="/about">
+                    <Button
+                      size="sm"
+                      rounded="full"
+                      justifyContent="flex-start"
+                      color={router.pathname === "/about" ? "#0f7a06" : ""}
+                      _hover={{
+                        bgColor: "#e3ffe2",
+                        transition: "all 0.5s ease-in-out",
+                      }}
+                      _active={{
+                        bgColor: "#8ef985",
+                      }}
+                      _focus={{
+                        boxShadow: "0 0 0 3px #a2f69b",
+                      }}
+                      variant="ghost"
+                    >
+                      About
+                    </Button>
+                  </Link>
+
+                  <Link href="/services">
+                    <Button
+                      size="sm"
+                      rounded="full"
+                      justifyContent="flex-start"
+                      color={router.pathname === "/services" ? "#0f7a06" : ""}
+                      _hover={{
+                        bgColor: "#e3ffe2",
+                        transition: "all 0.5s ease-in-out",
+                      }}
+                      _active={{
+                        bgColor: "#8ef985",
+                      }}
+                      _focus={{
+                        boxShadow: "0 0 0 3px #a2f69b",
+                      }}
+                      variant="ghost"
+                    >
+                      Our Services
+                    </Button>
+                  </Link>
+
+                  <Menu flip>
+                    <MenuButton
+                      size="sm"
+                      rounded="full"
+                      textAlign="left"
+                      _hover={{
+                        bgColor: "#e3ffe2",
+                        transition: "all 0.5s ease-in-out",
+                      }}
+                      _active={{
+                        bgColor: "#8ef985",
+                      }}
+                      _focus={{
+                        boxShadow: "0 0 0 3px #a2f69b",
+                      }}
+                      variant="ghost"
+                      as={Button}
+                    >
+                      Our Solutions
+                    </MenuButton>
+                    <MenuList>
+                      <Link href="/accounting-software-solution">
+                        <MenuItem
+                          fontSize="sm"
+                          bgColor={
+                            router.pathname === "/accounting-software-solution"
+                              ? "primary.100"
+                              : ""
+                          }
+                        >
+                          Accounting Software Solution
+                        </MenuItem>
+                      </Link>
+                      <Link href="/general-insurance">
+                        <MenuItem
+                          bgColor={
+                            router.pathname === "/general-insurance"
+                              ? "primary.100"
+                              : ""
+                          }
+                          fontSize="sm"
+                        >
+                          General Insurance Management
+                        </MenuItem>
+                      </Link>
+                      <Link href="/hmo-insurance-management-solution">
+                        <MenuItem
+                          bgColor={
+                            router.pathname ===
+                            "/hmo-insurance-management-solution"
+                              ? "primary.100"
+                              : ""
+                          }
+                          fontSize="sm"
+                        >
+                          HMO Insurance Management Solution
+                        </MenuItem>
+                      </Link>
+                      <Link href="/human-resource-management-solution">
+                        <MenuItem
+                          bgColor={
+                            router.pathname ===
+                            "/human-resource-management-solution"
+                              ? "primary.100"
+                              : ""
+                          }
+                          fontSize="sm"
+                        >
+                          Human Resource Management Solution
+                        </MenuItem>
+                      </Link>
+                      <Link href="/insurance-broker-management-platform">
+                        <MenuItem
+                          bgColor={
+                            router.pathname ===
+                            "/insurance-broker-management-platform"
+                              ? "primary.100"
+                              : ""
+                          }
+                          fontSize="sm"
+                        >
+                          Insurance broker Management Platform
+                        </MenuItem>
+                      </Link>
+                    </MenuList>
+                  </Menu>
+
+                  <Link href="/contact">
+                    <Button
+                      size="sm"
+                      rounded="full"
+                      justifyContent="flex-start"
+                      color={router.pathname === "/contact" ? "#0f7a06" : ""}
+                      _hover={{
+                        bgColor: "#e3ffe2",
+                        transition: "all 0.5s ease-in-out",
+                      }}
+                      _active={{
+                        bgColor: "#8ef985",
+                      }}
+                      _focus={{
+                        boxShadow: "0 0 0 3px #a2f69b",
+                      }}
+                      variant="ghost"
+                    >
+                      Contact
+                    </Button>
+                  </Link>
                 </Stack>
               </DrawerBody>
             </DrawerContent>
