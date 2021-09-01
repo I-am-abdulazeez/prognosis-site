@@ -44,7 +44,7 @@ const Contact = (): JSX.Element => {
     reset,
     formState: { errors, isSubmitting, touchedFields },
   } = useForm<IFormInput>({
-    mode: "onSubmit",
+    mode: "onChange",
   });
 
   const sendMail: SubmitHandler<IFormInput> = async (data) => {
@@ -108,11 +108,17 @@ const Contact = (): JSX.Element => {
                     Name:
                   </FormLabel>
                   <Input
-                    isRequired
                     id="name"
                     {...register("name", {
-                      min: 4,
-                      max: 30,
+                      required: "This is required!",
+                      minLength: {
+                        value: 4,
+                        message: "Minimum of 4 characters",
+                      },
+                      maxLength: {
+                        value: 30,
+                        message: "Name must not be more than 30 characters",
+                      },
                     })}
                     _focus={{
                       borderColor: "#19aa0c",
@@ -130,11 +136,17 @@ const Contact = (): JSX.Element => {
                     Company Name:
                   </FormLabel>
                   <Input
-                    isRequired
                     id="companyName"
                     {...register("companyName", {
-                      min: 4,
-                      max: 30,
+                      required: "This is required!",
+                      minLength: {
+                        value: 4,
+                        message: "Minimum of 4 characters",
+                      },
+                      maxLength: {
+                        value: 30,
+                        message: "Name must not be more than 30 characters",
+                      },
                     })}
                     bg="white"
                     fontSize={{ base: "xs", md: "14px" }}
@@ -154,9 +166,10 @@ const Contact = (): JSX.Element => {
                   <Input
                     id="email"
                     type="email"
-                    isRequired
                     placeholder="Email Address..."
-                    {...register("email", {})}
+                    {...register("email", {
+                      required: "Email Address is required",
+                    })}
                     _focus={{
                       borderColor: "#19aa0c",
                       boxShadow: "0 0 0 1px #19aa0c",
@@ -172,9 +185,10 @@ const Contact = (): JSX.Element => {
                     Select Service:
                   </FormLabel>
                   <Select
-                    isRequired
                     id="services"
-                    {...register("services")}
+                    {...register("services", {
+                      required: "please select a service",
+                    })}
                     _focus={{
                       borderColor: "#19aa0c",
                       boxShadow: "0 0 0 1px #19aa0c",
@@ -207,10 +221,16 @@ const Contact = (): JSX.Element => {
                 </FormLabel>
                 <Textarea
                   id="message"
-                  isRequired
                   {...register("message", {
-                    min: 10,
-                    max: 200,
+                    minLength: {
+                      value: 10,
+                      message: "Minimum of 10 characters",
+                    },
+                    maxLength: {
+                      value: 200,
+                      message: "Name must not be more than 200 characters",
+                    },
+                    required: "is required",
                   })}
                   minH="100px"
                   maxH="100px"
@@ -231,6 +251,7 @@ const Contact = (): JSX.Element => {
                   size="sm"
                   type="submit"
                   color="white"
+                  disabled={isSubmitting}
                   isLoading={isSubmitting}
                   _hover={{
                     bgColor: "#1A202C",
@@ -242,7 +263,7 @@ const Contact = (): JSX.Element => {
                     boxShadow: "0 0 0 3px #1A202C",
                   }}
                 >
-                  Submit
+                  Send Message
                 </Button>
               </Box>
             </Stack>

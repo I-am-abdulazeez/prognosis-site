@@ -13,10 +13,14 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     await sgMail.send({
       to: "<abdulazeezolamide50@gmail.com>",
       from: "oabdulazeez70@gmail.com",
-      subject: companyName,
+      subject: `Message from ${companyName}`,
       html: `
-            <div>
-              ${email} - ${name} - ${services} - ${message}
+            <div style="font-size: 0.6rem;>
+             <p>
+                Hi, my Name is ${name} with the Email Address of: <b>${email}</b>,
+                i am from ${companyName}. I need your Service on: <b>${services}</b>.
+             </p>
+             <p style="font-size: 0.5rem; font-weight: bold;">${message}</p>
             </div>
           `,
       text: "Testing Email",
