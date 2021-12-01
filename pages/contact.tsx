@@ -32,7 +32,7 @@ const Contact = (): JSX.Element => {
         hasSecondText={false}
         titleText="Contact Us"
       />
-      <Box py="4em" bg="#c3f1bf">
+      <Box py="4em" bg="#8ef985">
         <Container maxW="container.xl">
           <SimpleGrid
             align="center"
@@ -56,14 +56,16 @@ const Contact = (): JSX.Element => {
             <VStack align="center" spacing="1em">
               <HiOutlinePhone size="50px" />
               <Heading fontSize={{ base: "20px", md: "2xl" }}>Phone</Heading>
-              <Text>+234 809 070 0956, </Text>
+              <Text>
+                +234 809 070 0956, <br /> +234 701 626 2503.{" "}
+              </Text>
             </VStack>
             <VStack align="center" spacing="1em">
               <HiOutlineMail size="50px" />
               <Heading fontSize={{ base: "20px", md: "2xl" }}>
                 Contact Details
               </Heading>
-              <Text>info@prognosistechnologie.com</Text>
+              <Text>info@prognosistechnologies.com</Text>
             </VStack>
           </SimpleGrid>
         </Container>

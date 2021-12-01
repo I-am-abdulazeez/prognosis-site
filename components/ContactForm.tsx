@@ -128,7 +128,6 @@ const ContactForm = (): JSX.Element => {
           <Button
             variant="solid"
             bgColor="#1A202C"
-            rounded="full"
             size="sm"
             type="submit"
             color="white"

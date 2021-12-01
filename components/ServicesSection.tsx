@@ -45,11 +45,6 @@ const ServicesSection = (): JSX.Element => {
                   technology needs. Our technologies and solutions are adaptable
                   for clients across the following verticals:
                 </Text>
-                <Text mt={4} w={{ base: "100%", md: "650px" }}>
-                  Finance - Healthcare - Wholesale and Retail - Education -
-                  Construction - Entertainment - Real Estate - Transportation -
-                  Energy
-                </Text>
               </Box>
             </GridItem>
             <GridItem>

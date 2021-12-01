@@ -22,7 +22,7 @@ const About = (): JSX.Element => {
         bgImage="/images/innovation.jpg"
         firstText="WHO WE ARE"
         hasSecondText={false}
-        titleText="Delivering Value & Innovation"
+        titleText="Delivering Values & Innovation"
       />
       <Box py="3em">
         <AboutSection />

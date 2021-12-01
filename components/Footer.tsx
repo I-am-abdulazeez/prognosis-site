@@ -34,7 +34,7 @@ const Footer = (): JSX.Element => {
                 />
               </Box>
               <Text textStyle="defaultText">
-                Prognosis Technologies Limited (PSL) is a software development
+                Prognosis Technologies Limited (PTL) is a software development
                 and implementation service provider using cutting edge
                 technologies. Since 2013, we have been helping companies and
                 organization create and recreate software solutions powered by

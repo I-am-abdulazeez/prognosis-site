@@ -56,7 +56,7 @@ const Landing = (): JSX.Element => {
               fontWeight="light"
               lineHeight={{ base: "1.6", md: "1.7" }}
             >
-              Prognosis Technologies Limited (PSL) is a software development and
+              Prognosis Technologies Limited (PTL) is a software development and
               implementation service provider using cutting edge technologies.
               Since 2013, we have been helping companies and organization create
               and recreate software solutions powered by latest technologies to

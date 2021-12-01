@@ -21,7 +21,7 @@ const Contact = (): JSX.Element => {
               w={{ base: "100%", md: "70%" }}
               fontSize={{ base: "25px", md: "3xl" }}
             >
-              Let us deliver on your project needs
+              Let's talk about your projects
             </Heading>
             <Text w={{ base: "100%", md: "80%" }} textStyle="defaultText">
               Our team of professional developers and business analyst are

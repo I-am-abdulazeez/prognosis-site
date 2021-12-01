@@ -22,7 +22,7 @@ const Social = (): JSX.Element => {
       </Box>
       <Box textAlign="center" mt="1.2em" color="white">
         <Text lineHeight="1.7" fontSize={{ base: "sm", md: "15px" }}>
-          +234 809 070 0956, +234 701 626 2503
+          +234 809 070 0956, +234 701 626 2503.
         </Text>
       </Box>
       <HStack spacing={3} mt="1em" justifyContent="center">

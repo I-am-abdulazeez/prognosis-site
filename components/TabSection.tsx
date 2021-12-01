@@ -26,7 +26,7 @@ const tabList: tabListOpts[] = [
   },
   {
     heading: "Custom Software Development ",
-    text: "At Progronosis Technologies, our engineers are trained professionals who have attained first level training and working expertise in Software Development. Our team is ardent about solving complex problems quickly and effectively, helping our customers grow their businesses, and providing the highest-quality customer experience. By choosing custom software development from Prognosis Technology, you'll enjoy full ownership, full flexibility, competitive advantages and technology independent, tailored for your business.",
+    text: "At Progronosis Technologies Limited, our engineers are trained professionals who have attained first level training and working expertise in Software Development. Our team is ardent about solving complex problems quickly and effectively, helping our customers grow their businesses, and providing the highest-quality customer experience. By choosing custom software development from Prognosis Technology, you'll enjoy full ownership, full flexibility, competitive advantages and technology independent, tailored for your business.",
     abbr: "CSD",
   },
   {
