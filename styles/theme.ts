@@ -1,6 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 
-const FontFamily: string = "Sora";
+const FontFamily: string = `Sora, "Calibri"`;
 
 const theme = extendTheme({
   fonts: {

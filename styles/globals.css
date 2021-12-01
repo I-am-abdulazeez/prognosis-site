@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
 
+body {
+  overflow-x: hidden;
+  color: #2d3748;
+}
+
 body::-webkit-scrollbar {
   width: 7px;
 }
@@ -9,12 +14,12 @@ body::-webkit-scrollbar-track {
   background: #fff;
 }
 body::-webkit-scrollbar-thumb {
-  background: #909090;
+  background: #0fbf44;
   border-radius: 10px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: rgba(175, 175, 175, 0.8);
+  background: #05862c;
   border-radius: 10px;
 }
 
@@ -46,4 +51,8 @@ body::-webkit-scrollbar-thumb:hover {
 a {
   font-size: 14px;
   font-weight: 500;
+}
+
+.semibold {
+  font-weight: 700;
 }

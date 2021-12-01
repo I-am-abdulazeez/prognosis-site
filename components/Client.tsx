@@ -6,7 +6,7 @@ const Client = (): JSX.Element => {
     <Container maxW="container.xl">
       <Heading
         w={{ base: "100%", md: "80%" }}
-        fontSize={{ base: "25px", md: "4xl" }}
+        fontSize={{ base: "25px", md: "3xl" }}
       >
         Clients who trust us
       </Heading>

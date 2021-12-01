@@ -42,7 +42,7 @@ const TabSection = (): JSX.Element => {
   return (
     <Container maxW="container.xl">
       <Box textAlign="center">
-        <Heading fontSize={{ base: "25px", md: "4xl" }}>
+        <Heading fontSize={{ base: "25px", md: "3xl" }}>
           OUR AREAS OF SPECIALTY
         </Heading>
       </Box>

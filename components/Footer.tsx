@@ -1,4 +1,3 @@
-import { Button, IconButton } from "@chakra-ui/button";
 import {
   Box,
   Container,
@@ -6,32 +5,27 @@ import {
   Grid,
   GridItem,
   Heading,
-  HStack,
   Stack,
   Text,
   VStack,
 } from "@chakra-ui/layout";
-import { ChakraImage } from "../utils";
-import {
-  RiFacebookCircleFill,
-  RiInstagramLine,
-  RiLinkedinBoxFill,
-  RiTwitterFill,
-} from "react-icons/ri";
+import { ChakraNextImage } from "../components/ChakraImage";
 import Link from "next/link";
+import { chakra } from "@chakra-ui/system";
+import Social from "./Social";
 
 const Footer = (): JSX.Element => {
   return (
     <Box>
       <Container maxW="container.xl">
         <Grid
-          gap="5em"
-          templateColumns={{ base: "repeat(1, 1fr)", md: "50% 45%" }}
+          gap={{ base: "2em", md: "10em" }}
+          templateColumns={{ base: "repeat(1, 1fr)", md: "40% 60%" }}
         >
           <GridItem>
             <VStack color="white" spacing={5}>
               <Box m="0 auto" width="100%">
-                <ChakraImage
+                <ChakraNextImage
                   width="200px"
                   height="100px"
                   src="/images/Prognosis.png"
@@ -40,11 +34,11 @@ const Footer = (): JSX.Element => {
                 />
               </Box>
               <Text textStyle="defaultText">
-                Prognosis Technologies (PS) is a software development and
-                implementation service provider using cutting edge technologies.
-                Since 2013, we have been helping companies and organization
-                create and recreate software solutions powered by latest
-                technologies to improve their business goals.
+                Prognosis Technologies Limited (PSL) is a software development
+                and implementation service provider using cutting edge
+                technologies. Since 2013, we have been helping companies and
+                organization create and recreate software solutions powered by
+                latest technologies to improve their business goals.
               </Text>
             </VStack>
           </GridItem>
@@ -82,13 +76,39 @@ const Footer = (): JSX.Element => {
                   QUICKS LINKS
                 </Heading>
                 <Text as={Link} href="/" textStyle="defaultText">
-                  Home
+                  <chakra.a
+                    _hover={{
+                      textDecoration: "underline",
+                      cursor: "pointer",
+                    }}
+                  >
+                    Home
+                  </chakra.a>
                 </Text>
-                <Text as={Link} href="/about" textStyle="defaultText">
-                  About Us
+                <Text
+                  as={Link}
+                  href="/about"
+                  textDecoration="underline"
+                  textStyle="defaultText"
+                >
+                  <chakra.a
+                    _hover={{
+                      textDecoration: "underline",
+                      cursor: "pointer",
+                    }}
+                  >
+                    About Us
+                  </chakra.a>
                 </Text>
                 <Text as={Link} href="/services" textStyle="defaultText">
-                  Our Services
+                  <chakra.a
+                    _hover={{
+                      textDecoration: "underline",
+                      cursor: "pointer",
+                    }}
+                  >
+                    Our Services
+                  </chakra.a>
                 </Text>
                 <Text
                   as={Link}
@@ -96,7 +116,15 @@ const Footer = (): JSX.Element => {
                   lineHeight="1.7"
                   fontSize={{ base: "sm", md: "15px" }}
                 >
-                  Our Solutions
+                  <chakra.a
+                    _hover={{
+                      textDecoration: "underline",
+                      cursor: "pointer",
+                    }}
+                  >
+                    {" "}
+                    Our Solutions
+                  </chakra.a>
                 </Text>
                 <Text
                   as={Link}
@@ -104,91 +132,20 @@ const Footer = (): JSX.Element => {
                   lineHeight="1.7"
                   fontSize={{ base: "sm", md: "15px" }}
                 >
-                  Contact
+                  <chakra.a
+                    _hover={{
+                      textDecoration: "underline",
+                      cursor: "pointer",
+                    }}
+                  >
+                    Contact
+                  </chakra.a>
                 </Text>
               </Flex>
             </Stack>
           </GridItem>
         </Grid>
-        <Box
-          width={{ base: "100%", md: "500px" }}
-          m="0 auto"
-          textAlign="center"
-          mt="5em"
-          color="white"
-        >
-          <Text lineHeight="1.7" fontSize={{ base: "sm", md: "15px" }}>
-            Prognosis technologies Plot 5, Akiogun Road. Opposite Lekki Phase 1,
-            Lagos Island Nigeria.
-          </Text>
-        </Box>
-        <Box textAlign="center" mt="1.2em" color="white">
-          <Text lineHeight="1.7" fontSize={{ base: "sm", md: "15px" }}>
-            +234 809 070 0956, +234 809 070 0956
-          </Text>
-        </Box>
-        <HStack spacing={3} mt="1em" justifyContent="center">
-          <IconButton
-            variant="ghost"
-            as="a"
-            href="#"
-            size="xs"
-            color="#718096"
-            _hover={{
-              bgColor: "none",
-            }}
-            _active={{
-              bgColor: "none",
-            }}
-            aria-label="facebook"
-            icon={<RiFacebookCircleFill size="23px" />}
-          />
-          <IconButton
-            variant="ghost"
-            as="a"
-            href="#"
-            size="xs"
-            color="#718096"
-            _hover={{
-              bgColor: "none",
-            }}
-            _active={{
-              bgColor: "none",
-            }}
-            aria-label="facebook"
-            icon={<RiLinkedinBoxFill size="23px" />}
-          />
-          <IconButton
-            variant="ghost"
-            as="a"
-            href="#"
-            size="xs"
-            color="#718096"
-            _hover={{
-              bgColor: "none",
-            }}
-            _active={{
-              bgColor: "none",
-            }}
-            aria-label="facebook"
-            icon={<RiTwitterFill size="23px" />}
-          />
-          <IconButton
-            variant="ghost"
-            as="a"
-            href="#"
-            size="xs"
-            color="#718096"
-            _hover={{
-              bgColor: "none",
-            }}
-            _active={{
-              bgColor: "none",
-            }}
-            aria-label="facebook"
-            icon={<RiInstagramLine size="23px" />}
-          />
-        </HStack>
+        <Social />
       </Container>
     </Box>
   );

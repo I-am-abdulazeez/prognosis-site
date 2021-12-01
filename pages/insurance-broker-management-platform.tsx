@@ -1,35 +1,20 @@
 import { Image } from "@chakra-ui/image";
-import { Box, Flex, Heading, HStack, Stack, Text } from "@chakra-ui/layout";
-import Head from "next/head";
-import { MdFilterFrames } from "react-icons/md";
-import { SiFSecure } from "react-icons/si";
+import { Box, Flex, Heading, Text } from "@chakra-ui/layout";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import LandingOverlays from "../components/LandingOverlays";
 import Navbar from "../components/Navbar";
+import SiteMetaData from "../components/SiteMetaData";
+import SolutionStack from "../components/SolutionStack";
 
 const InsuranceBroker = (): JSX.Element => {
   return (
     <Box>
-      <Head>
-        <title>
-          Insurance Broker Management Platform | Prognosis Technologies Limited
-        </title>
-        <meta
-          name="description"
-          content="Insurance Broker Management Platform | Prognosis Technologies Limited"
-        />
-        <meta
-          property="og:title"
-          content="Maintain individual client & sales record | Pronosis Technologies Limited"
-        />
-        <meta
-          property="og:description"
-          content="Maintain individual client & sales record | Pronosis Technologies Limited"
-        />
-        <meta property="og:image" content="/images/Prognosis.png" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SiteMetaData
+        metaTitle="Insurance Broker Management Platform | Prognosis Technologies Limited"
+        metaContent="Insurance Broker Management Platform | Prognosis Technologies Limited"
+        metaContent2="Maintain individual client & sales record | Pronosis Technologies Limited"
+      />
       <Navbar />
       <LandingOverlays
         bgImage="/images/insurance.jpg"
@@ -49,7 +34,7 @@ const InsuranceBroker = (): JSX.Element => {
               px={{ base: "2em", md: "5em" }}
               py={{ base: "2em", md: "0px" }}
             >
-              <Heading fontSize={{ base: "25px", md: "4xl" }}>
+              <Heading fontSize={{ base: "25px", md: "3xl" }}>
                 Prognosis Insurance Broker Management Platform.
               </Heading>
               <Text mt={"1em"} textStyle="defaultText">
@@ -58,30 +43,12 @@ const InsuranceBroker = (): JSX.Element => {
                 and maintaining client policy allows agents to effectively
                 service clients and stay of top of sales.
               </Text>
-              <Stack
-                align="center"
-                spacing={{ base: "1.5em", md: "1em" }}
-                direction={{ base: "column", md: "row" }}
-                mt={"2em"}
-              >
-                <HStack>
-                  <SiFSecure size="30px" color="#EEF2F6" />
-                  <Text mt={"1em"} textStyle="defaultText">
-                    Secured Database
-                  </Text>
-                </HStack>
-                <HStack>
-                  <MdFilterFrames size="30px" color="#EEF2F6" />
-                  <Text mt={"1em"} textStyle="defaultText">
-                    Modern Framework
-                  </Text>
-                </HStack>
-              </Stack>
+              <SolutionStack />
             </Box>
           </Flex>
         </Flex>
       </Box>
-      <Box py="4em" bg="#87F97D">
+      <Box py="4em" bg="#8ef985">
         <Contact />
       </Box>
       <Box pt="4em" pb="2em" bgColor="#1A202C">

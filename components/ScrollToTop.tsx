@@ -4,7 +4,7 @@ import { useBreakpointValue } from "@chakra-ui/media-query";
 import React, { useEffect, useState } from "react";
 import { IoIosArrowRoundUp } from "react-icons/io";
 
-export default function ScrollToTop() {
+const ScrollToTop = () => {
   const buttonSize = useBreakpointValue({ base: "sm", md: "md" });
   const [isVisible, setIsVisible] = useState(false);
   const scrollToTop = () => {
@@ -29,7 +29,7 @@ export default function ScrollToTop() {
   }, []);
 
   return (
-    <Box position="fixed" bottom={5} right={5}>
+    <Box position="fixed" zIndex={999} bottom={5} right={5}>
       {isVisible && (
         <IconButton
           aria-label="go-up"
@@ -45,4 +45,6 @@ export default function ScrollToTop() {
       )}
     </Box>
   );
-}
+};
+
+export default ScrollToTop;

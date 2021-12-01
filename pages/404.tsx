@@ -1,29 +1,17 @@
 import { Button } from "@chakra-ui/button";
 import { Image } from "@chakra-ui/image";
-import { Box, Flex, Text } from "@chakra-ui/layout";
-import Head from "next/head";
 import Link from "next/link";
+import { Box, Flex, Text } from "@chakra-ui/layout";
+import SiteMetaData from "../components/SiteMetaData";
 
 const ErrorPage = (): JSX.Element => {
   return (
     <Flex h="100vh" flexDir="column" justify="center" align="center">
-      <Head>
-        <title>404 Page | Prognosis Technologies Limited</title>
-        <meta
-          name="description"
-          content="Page Not Found Prognosis Technologies Limited"
-        />
-        <meta
-          property="og:title"
-          content="Page Not Found Pronosis Technologies Limited"
-        />
-        <meta
-          property="og:description"
-          content="Page does not Exist | Pronosis Technologies Limited"
-        />
-        <meta property="og:image" content="/images/sad.svg" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SiteMetaData
+        metaTitle="404 Page | Prognosis Technologies Limited"
+        metaContent="Page Not Found Prognosis Technologies Limited"
+        metaContent2="Page does not Exist | Pronosis Technologies Limited"
+      />
       <Box m="0 auto" w={{ base: "80px", md: "120px" }} mb={5}>
         <Image
           width={{ base: "80px", md: "120px" }}

@@ -1,5 +1,4 @@
 import { Box, Container, SimpleGrid } from "@chakra-ui/layout";
-import Head from "next/head";
 import ScrollAnimation from "react-animate-on-scroll";
 import AboutSection from "../components/AboutSection";
 import Contact from "../components/Contact";
@@ -7,28 +6,17 @@ import Footer from "../components/Footer";
 import LandingOverlays from "../components/LandingOverlays";
 import Navbar from "../components/Navbar";
 import RoundCard from "../components/RoundCard";
+import SiteMetaData from "../components/SiteMetaData";
 import Team from "../components/Team";
 
-const about = (): JSX.Element => {
+const About = (): JSX.Element => {
   return (
     <Box>
-      <Head>
-        <title>About | Prognosis Technologies Limited</title>
-        <meta
-          name="description"
-          content="About Prognosis Technologies Limited"
-        />
-        <meta
-          property="og:title"
-          content="About Pronosis Technologies Limited"
-        />
-        <meta
-          property="og:description"
-          content="Who we are | Pronosis Technologies Limited"
-        />
-        <meta property="og:image" content="/images/Prognosis.png" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SiteMetaData
+        metaContent="About Prognosis Technologies Limited"
+        metaTitle="About | Prognosis Technologies Limited"
+        metaContent2="Who we are | Pronosis Technologies Limited"
+      />
       <Navbar />
       <LandingOverlays
         bgImage="/images/innovation.jpg"
@@ -42,7 +30,7 @@ const about = (): JSX.Element => {
       <Box py="3em" bg="#EEF2F6">
         <Container maxW="container.xl">
           <SimpleGrid columns={{ base: 1, md: 3 }} mt={10} gap={8}>
-            <ScrollAnimation animateIn="animate__fadeInUp">
+            <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
               <RoundCard
                 title="WHY CHOOSE US
             360 Degree Approach"
@@ -51,7 +39,7 @@ const about = (): JSX.Element => {
                 textColor="#1A202C"
               />
             </ScrollAnimation>
-            <ScrollAnimation animateIn="animate__fadeInUp">
+            <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
               <RoundCard
                 title="Client – Centricity"
                 text="Our approach to client’s need is top-notched, we are empathetic, focused, positive and render genuine support to ensure our customer attained a more compatible solution to their business needs."
@@ -59,7 +47,7 @@ const about = (): JSX.Element => {
                 textColor="#fff"
               />
             </ScrollAnimation>
-            <ScrollAnimation animateIn="animate__fadeInUp">
+            <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true}>
               <RoundCard
                 title="Domain Expertise"
                 text="We are a holistic software company and we pride ourselves in that line. We do not deviate from our mission wish is to provide software solutions for customers.."
@@ -71,7 +59,10 @@ const about = (): JSX.Element => {
           <Box mt={10}>
             <Container maxW="870px" px={{ base: 0, md: "inherit" }}>
               <SimpleGrid columns={{ base: 1, md: 2 }} gap={8}>
-                <ScrollAnimation animateIn="animate__slideInRight">
+                <ScrollAnimation
+                  animateIn="animate__slideInRight"
+                  animateOnce={true}
+                >
                   <RoundCard
                     bgColor="white"
                     textColor=""
@@ -79,7 +70,10 @@ const about = (): JSX.Element => {
                     text="To guarantee the efficient running of your business, we ensure that from conception to execution and delivery of your project needs; every aspect is treated with utmost urgency efficiency."
                   />
                 </ScrollAnimation>
-                <ScrollAnimation animateIn="animate__slideInRight">
+                <ScrollAnimation
+                  animateIn="animate__slideInRight"
+                  animateOnce={true}
+                >
                   <RoundCard
                     bgColor="#2D3748"
                     textColor="white"
@@ -95,7 +89,7 @@ const about = (): JSX.Element => {
       <Box py="3em">
         <Team />
       </Box>
-      <Box py="4em" bg="#87F97D">
+      <Box py="4em" bg="#8ef985">
         <Contact />
       </Box>
       <Box pt="4em" pb="2em" bgColor="#1A202C">
@@ -105,4 +99,4 @@ const about = (): JSX.Element => {
   );
 };
 
-export default about;
+export default About;

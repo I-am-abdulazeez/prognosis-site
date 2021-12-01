@@ -1,5 +1,4 @@
 import { Box, Container, Heading, Text } from "@chakra-ui/layout";
-import Head from "next/head";
 import ScrollAnimation from "react-animate-on-scroll";
 import Client from "../components/Client";
 import Contact from "../components/Contact";
@@ -9,25 +8,17 @@ import Landing from "../components/Landing";
 import Navbar from "../components/Navbar";
 import SectionOne from "../components/SectionOne";
 import SectionTwo from "../components/SectionTwo";
+import SiteMetaData from "../components/SiteMetaData";
 import Testimonials from "../components/Testimonials";
 
 export default function Home(): JSX.Element {
   return (
     <Box>
-      <Head>
-        <title>Home | Prognosis Technologies Limited</title>
-        <meta
-          name="description"
-          content="Home Prognosis Technologies Limited"
-        />
-        <meta property="og:title" content="Pronosis Technologies Limited" />
-        <meta
-          property="og:description"
-          content="What we do | Pronosis Technologies Limited"
-        />
-        <meta property="og:image" content="/images/Prognosis.png" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SiteMetaData
+        metaTitle="Home | Prognosis Technologies Limited"
+        metaContent="Home Prognosis Technologies Limited"
+        metaContent2="What we do | Pronosis Technologies Limited"
+      />
       <Navbar />
       <Box bgColor="#1A202C">
         <Landing />
@@ -35,11 +26,11 @@ export default function Home(): JSX.Element {
       <Box py="4em" textAlign="center">
         <SectionOne />
       </Box>
-      <Box py="4em" bgColor="#1A202C">
+      <Box py={{ base: "3rem", md: "4em" }} bgColor="#1A202C">
         <SectionTwo />
       </Box>
       <Box
-        py={{ base: "5em", md: "8em" }}
+        py={{ base: "3em", md: "8em" }}
         bg="url('images/sec-img.png')"
         bgPos="center"
         bgSize="cover"
@@ -47,11 +38,15 @@ export default function Home(): JSX.Element {
         color="white"
       >
         <Container maxW="container.xl">
-          <ScrollAnimation animateIn="animate__slideInUp" duration={0.3}>
+          <ScrollAnimation
+            animateIn="animate__slideInUp"
+            duration={0.3}
+            animateOnce={true}
+          >
             <Heading
               w={{ base: "320px", md: "50%" }}
               mb={5}
-              fontSize={{ base: "25px", md: "4xl" }}
+              fontSize={{ base: "25px", md: "3xl" }}
             >
               Robust technology solutions across market verticals
             </Heading>
@@ -75,7 +70,7 @@ export default function Home(): JSX.Element {
       <Box py="4em">
         <Client />
       </Box>
-      <Box py="4em" bg="#87F97D">
+      <Box py="4em" bg="#8ef985">
         <Contact />
       </Box>
       <Box pt="4em" pb="2em" bgColor="#1A202C">

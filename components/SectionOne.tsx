@@ -15,7 +15,7 @@ const SectionOne = (): JSX.Element => {
         our technology
       </Text>
       <ScrollAnimation animateIn="animate__pulse">
-        <Heading fontSize={{ base: "25px", md: "4xl" }} my={4}>
+        <Heading fontSize={{ base: "25px", md: "3xl" }} my={4}>
           Cutting-Edge <chakra.span color="#0FBF44">Solutions</chakra.span>{" "}
         </Heading>
       </ScrollAnimation>

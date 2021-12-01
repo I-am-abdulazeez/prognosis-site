@@ -7,29 +7,8 @@ import {
   Text,
 } from "@chakra-ui/layout";
 import { chakra } from "@chakra-ui/system";
-
-interface cardItems {
-  cardHeader: string;
-  cardText: string;
-}
-
-const cardsArray: cardItems[] = [
-  {
-    cardHeader: "Our Mission",
-    cardText:
-      "Prognosis Technologies (PS) is a software development and implementation service provider using cutting edge technologies. Since 2013, we have been helping companies and organization create and recreate software solutions powered by latest technologies to improve their business goals.",
-  },
-  {
-    cardHeader: "Our Philosophy",
-    cardText:
-      "Prognosis Technologies (PS) is a software development and implementation service provider using cutting edge technologies. Since 2013, we have been helping companies and organization create and recreate software solutions powered by latest technologies to improve their business goals.",
-  },
-  {
-    cardHeader: "Why work with us",
-    cardText:
-      "Prognosis Technologies (PS) is a software development and implementation service provider using cutting edge technologies. Since 2013, we have been helping companies and organization create and recreate software solutions powered by latest technologies to improve their business goals.",
-  },
-];
+import { cardsArray } from "../data";
+import { cardItems } from "../interfaces";
 
 const AboutSection = (): JSX.Element => {
   return (
@@ -42,7 +21,7 @@ const AboutSection = (): JSX.Element => {
       >
         <Heading
           w={{ base: "100%", md: "700px" }}
-          fontSize={{ base: "25px", md: "4xl" }}
+          fontSize={{ base: "25px", md: "3xl" }}
         >
           Transforming Businesses & Processes{" "}
           <chakra.span color="#0FBF44">
@@ -62,21 +41,24 @@ const AboutSection = (): JSX.Element => {
         </Text>
       </Flex>
       <SimpleGrid mt={10} spacing={3} columns={{ base: 1, md: 3 }}>
-        {cardsArray.map(({ cardHeader, cardText }, i) => (
-          <Box p={3} textAlign="center" key={i}>
+        {cardsArray.map(({ cardHeader, cardText }: cardItems, i) => (
+          <Box p={3} key={i}>
             <Box
               w={{ base: "200px", md: "300px" }}
-              m="0 auto"
+              m={{ base: "0 auto", md: "0px" }}
               rounded="md"
               bgColor="primary.200"
               roundedTopLeft="3xl"
               p={{ base: 2, md: 3 }}
             >
-              <Heading fontSize={{ base: "18px", md: "2xl" }}>
+              <Heading
+                textAlign="center"
+                fontSize={{ base: "18px", md: "2xl" }}
+              >
                 {cardHeader}
               </Heading>
             </Box>
-            <Box mt={6}>
+            <Box mt={6} textAlign={{ base: "center", md: "left" }}>
               <Text textStyle="defaultText" lineHeight="1.7">
                 {cardText}
               </Text>

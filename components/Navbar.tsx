@@ -10,10 +10,11 @@ import {
   DrawerHeader,
   DrawerOverlay,
 } from "@chakra-ui/modal";
+import { Portal } from "@chakra-ui/react";
 import { useRouter } from "next/dist/client/router";
 import Link from "next/link";
 import { HiMenuAlt3 } from "react-icons/hi";
-import { ChakraImage } from "../utils";
+import { ChakraNextImage } from "../components/ChakraImage";
 
 const Navbar = (): JSX.Element => {
   const router = useRouter();
@@ -36,7 +37,7 @@ const Navbar = (): JSX.Element => {
         <Flex align="center" justify="space-between">
           <Link href="/">
             <a>
-              <ChakraImage
+              <ChakraNextImage
                 width="140px"
                 height="66px"
                 src="/images/Prognosis.png"
@@ -54,7 +55,7 @@ const Navbar = (): JSX.Element => {
               variant="solid"
               colorScheme="primary"
               _focus={{
-                boxShadow: "0 0 0 3px #a2f69b",
+                boxShadow: "0 0 0 2px #a2f69b",
               }}
             />
           </Box>
@@ -78,7 +79,7 @@ const Navbar = (): JSX.Element => {
                   bgColor: "#8ef985",
                 }}
                 _focus={{
-                  boxShadow: "0 0 0 3px #24db14",
+                  boxShadow: "0 0 0 2px #24db14",
                 }}
                 variant="ghost"
               >
@@ -100,7 +101,7 @@ const Navbar = (): JSX.Element => {
                   bgColor: "#8ef985",
                 }}
                 _focus={{
-                  boxShadow: "0 0 0 3px #24db14",
+                  boxShadow: "0 0 0 2px #24db14",
                 }}
                 variant="ghost"
               >
@@ -122,7 +123,7 @@ const Navbar = (): JSX.Element => {
                   bgColor: "#8ef985",
                 }}
                 _focus={{
-                  boxShadow: "0 0 0 3px #24db14",
+                  boxShadow: "0 0 0 2px #24db14",
                 }}
                 variant="ghost"
               >
@@ -130,7 +131,7 @@ const Navbar = (): JSX.Element => {
               </Button>
             </Link>
 
-            <Menu>
+            <Menu closeOnSelect={true} isLazy offset={[2, 3]}>
               <MenuButton
                 size="sm"
                 rounded="full"
@@ -142,7 +143,7 @@ const Navbar = (): JSX.Element => {
                   bgColor: "#8ef985",
                 }}
                 _focus={{
-                  boxShadow: "0 0 0 3px #24db14",
+                  boxShadow: "0 0 0 2px #24db14",
                 }}
                 variant="ghost"
                 as={Button}
@@ -228,7 +229,7 @@ const Navbar = (): JSX.Element => {
                   bgColor: "#8ef985",
                 }}
                 _focus={{
-                  boxShadow: "0 0 0 3px #24db14",
+                  boxShadow: "0 0 0 2px #24db14",
                 }}
                 variant="ghost"
               >
@@ -247,13 +248,13 @@ const Navbar = (): JSX.Element => {
             <DrawerContent>
               <DrawerCloseButton
                 _focus={{
-                  boxShadow: "0 0 0 3px #24db14",
+                  boxShadow: "0 0 0 2px #24db14",
                 }}
                 size="sm"
                 rounded="full"
               />
               <DrawerHeader>
-                <ChakraImage
+                <ChakraNextImage
                   width="120px"
                   height="55px"
                   src="/images/Prognosis.png"
@@ -276,7 +277,7 @@ const Navbar = (): JSX.Element => {
                         bgColor: "#8ef985",
                       }}
                       _focus={{
-                        boxShadow: "0 0 0 3px #a2f69b",
+                        boxShadow: "0 0 0 2px #a2f69b",
                       }}
                       variant="ghost"
                     >
@@ -298,7 +299,7 @@ const Navbar = (): JSX.Element => {
                         bgColor: "#8ef985",
                       }}
                       _focus={{
-                        boxShadow: "0 0 0 3px #a2f69b",
+                        boxShadow: "0 0 0 2px #a2f69b",
                       }}
                       variant="ghost"
                     >
@@ -320,7 +321,7 @@ const Navbar = (): JSX.Element => {
                         bgColor: "#8ef985",
                       }}
                       _focus={{
-                        boxShadow: "0 0 0 3px #a2f69b",
+                        boxShadow: "0 0 0 2px #a2f69b",
                       }}
                       variant="ghost"
                     >
@@ -328,7 +329,7 @@ const Navbar = (): JSX.Element => {
                     </Button>
                   </Link>
 
-                  <Menu flip>
+                  <Menu offset={[2, 3]} isLazy closeOnSelect={false}>
                     <MenuButton
                       size="sm"
                       rounded="full"
@@ -341,7 +342,7 @@ const Navbar = (): JSX.Element => {
                         bgColor: "#8ef985",
                       }}
                       _focus={{
-                        boxShadow: "0 0 0 3px #a2f69b",
+                        boxShadow: "0 0 0 2px #a2f69b",
                       }}
                       variant="ghost"
                       as={Button}
@@ -429,7 +430,7 @@ const Navbar = (): JSX.Element => {
                         bgColor: "#8ef985",
                       }}
                       _focus={{
-                        boxShadow: "0 0 0 3px #a2f69b",
+                        boxShadow: "0 0 0 2px #a2f69b",
                       }}
                       variant="ghost"
                     >

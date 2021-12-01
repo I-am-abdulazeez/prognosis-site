@@ -1,11 +1,5 @@
 import { Box, Heading, Text } from "@chakra-ui/layout";
-
-type RoundCardProps = {
-  bgColor: string;
-  title: string;
-  text: string;
-  textColor: string;
-};
+import { RoundCardProps } from "../interfaces";
 
 const RoundCard = ({
   bgColor,

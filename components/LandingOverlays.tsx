@@ -44,7 +44,7 @@ const LandingOverlays = ({
         </Text>
         <ScrollAnimation animateIn="animate__fadeIn">
           <Heading
-            fontSize={{ base: "25px", md: "4xl" }}
+            fontSize={{ base: "25px", md: "3xl" }}
             width={{ base: "100%", md: "600px" }}
           >
             {titleText}

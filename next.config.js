@@ -1,6 +1,8 @@
+/** @type {import('next').NextConfig} */
 module.exports = {
-  images: {
-    loader: "imgix",
-    path: "",
+  reactStrictMode: true,
+  i18n: {
+    locales: ["en-US"],
+    defaultLocale: "en-US",
   },
 };

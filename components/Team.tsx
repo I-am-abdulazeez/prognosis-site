@@ -1,76 +1,71 @@
 import { Avatar } from "@chakra-ui/avatar";
-import { Box, Container, Heading, SimpleGrid, Text } from "@chakra-ui/layout";
+import {
+  Box,
+  Container,
+  Heading,
+  HStack,
+  SimpleGrid,
+  Text,
+} from "@chakra-ui/layout";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import { chakra } from "@chakra-ui/system";
+import { ourTeam } from "../data";
 import ScrollAnimation from "react-animate-on-scroll";
 
-interface TeamList {
-  username: string;
-  userPosition: string;
-  userAvatar: string;
-  userText: string;
-}
-
-const ourTeam: TeamList[] = [
-  {
-    username: "Calisto Zulu",
-    userPosition: "Founder & CEO",
-    userAvatar: "",
-    userText:
-      "We ensure that the period of conception and discussion of your needs are treated with utmost urgency and a delivery date is set aside and met.",
-  },
-  {
-    username: "Ifeanyi Info",
-    userPosition: "Founder & CEO",
-    userAvatar: "",
-    userText:
-      "We ensure that the period of conception and discussion of your needs are treated with utmost urgency and a delivery date is set aside and met.",
-  },
-  {
-    username: "Abdullahi Mustapha",
-    userPosition: "Founder & CEO",
-    userAvatar: "",
-    userText:
-      "We ensure that the period of conception and discussion of your needs are treated with utmost urgency and a delivery date is set aside and met.",
-  },
-];
-
 const Team = (): JSX.Element => {
-  const avatarSize = useBreakpointValue({ base: "lg", md: "xl" });
+  const avatarSize = useBreakpointValue({ base: "lg", md: "lg" });
 
   return (
     <Box>
-      <Heading textAlign="center" fontSize={{ base: "25px", md: "4xl" }}>
-        Our <chakra.span color="#0FBF44">Team</chakra.span>
-      </Heading>
-
       <Container maxW="container.xl">
-        <SimpleGrid spacing={3} mt={9} columns={{ base: 1, md: 3 }}>
+        <Box textAlign={{ base: "left", md: "center" }}>
+          <Heading fontSize={{ base: "25px", md: "3xl" }}>
+            Meet our <chakra.span color="#0FBF44">team</chakra.span>
+          </Heading>
+          <Text maxW="2xl" m="0 auto" mt={5}>
+            We ensure that the period of conception and discussion of your needs
+            are treated with utmost urgency and a delivery date is set aside and
+            met.
+          </Text>
+        </Box>
+
+        <SimpleGrid
+          spacing={14}
+          mt={{ base: "5rem", md: "8rem" }}
+          columns={{ base: 1, md: 2 }}
+        >
           {ourTeam.map(
             ({ userText, userAvatar, userPosition, username }, i) => (
-              <ScrollAnimation animateIn="animate__fadeInUp" key={i}>
-                <Box
-                  rounded="lg"
-                  _hover={{
-                    transition: "all 0.8s ease-in-out",
-                    boxShadow:
-                      "0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-                    cursor: "pointer",
-                  }}
-                  key={i}
-                  p={8}
-                  textAlign="center"
-                >
-                  <Avatar name={username} size={avatarSize} my={5} />
-                  <Heading fontSize={{ base: "18px", md: "2xl" }}>
-                    {username}
-                  </Heading>
-                  <Text mb={4} fontSize="sm" color="#718096">
-                    {userPosition}
-                  </Text>
-                  <Text fontSize={{ base: "sm", md: "15px" }} lineHeight="1.7">
-                    {userText}
-                  </Text>
+              <ScrollAnimation
+                animateIn="animate__fadeInUp"
+                animateOnce={true}
+                key={i}
+              >
+                <Box alignItems="flex-start" as={HStack} spacing={4} key={i}>
+                  <Avatar name={username} size={avatarSize} />
+                  <Box>
+                    <Heading
+                      color="primary"
+                      fontWeight="semibold"
+                      fontSize={{ base: "18px", md: "xl" }}
+                    >
+                      {username}
+                    </Heading>
+                    <Text
+                      mb={4}
+                      fontSize="sm"
+                      fontWeight="medium"
+                      color="#718096"
+                    >
+                      {userPosition}
+                    </Text>
+                    <Text
+                      fontSize={{ base: "sm", md: "14px" }}
+                      lineHeight="1.7"
+                    >
+                      {userText}
+                    </Text>
+                  </Box>
                 </Box>
               </ScrollAnimation>
             )
