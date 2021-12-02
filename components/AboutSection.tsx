@@ -33,7 +33,7 @@ const AboutSection = (): JSX.Element => {
           my="1.2em"
           textStyle="defaultText"
         >
-          Prognosis Technologies (PS) is a software development and
+          Prognosis Technologies Limited (PTL) is a software development and
           implementation service provider using cutting edge technologies. Since
           2013, we have been helping companies and organization create and
           recreate software solutions powered by latest technologies to improve
@@ -45,7 +45,7 @@ const AboutSection = (): JSX.Element => {
           <Box p={3} key={i}>
             <Box
               w={{ base: "200px", md: "300px" }}
-              m={{ base: "0 auto", md: "0px" }}
+              m="0 auto"
               rounded="md"
               bgColor="primary.200"
               roundedTopLeft="3xl"
@@ -58,7 +58,7 @@ const AboutSection = (): JSX.Element => {
                 {cardHeader}
               </Heading>
             </Box>
-            <Box mt={6} textAlign={{ base: "center", md: "left" }}>
+            <Box mt={6} textAlign="center">
               <Text textStyle="defaultText" lineHeight="1.7">
                 {cardText}
               </Text>

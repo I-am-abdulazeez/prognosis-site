@@ -48,11 +48,12 @@ export const ChakraNextImage = ({
   ...rest
 }: ImageProps & BoxProps & {}): JSX.Element => {
   return (
-    <Box pos="relative" {...rest}>
+    <Box pos="relative" borderRadius="sm" {...rest}>
       <ChakraNextUnwrappedImage
         w="auto"
         h="auto"
         loader={myLoader}
+        borderRadius="lg"
         width={width}
         quality={quality}
         height={height}

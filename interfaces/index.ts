@@ -1,4 +1,5 @@
 import { nanoid } from "nanoid";
+import { UrlObject } from "url";
 
 export interface SwipeDetails {
   imageSrc: string;
@@ -67,4 +68,15 @@ export interface TextAreaFieldProps extends InputFieldProps {}
 export interface serviceCategory {
   serviceId: string;
   serviceCategory: string;
+}
+
+export interface TabListOpts {
+  heading: string;
+  text: string;
+  abbr: string;
+}
+
+export interface FooterLinksProps {
+  text: string;
+  link: string | UrlObject;
 }

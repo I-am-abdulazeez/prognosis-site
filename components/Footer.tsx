@@ -10,9 +10,8 @@ import {
   VStack,
 } from "@chakra-ui/layout";
 import { ChakraNextImage } from "../components/ChakraImage";
-import Link from "next/link";
-import { chakra } from "@chakra-ui/system";
 import Social from "./Social";
+import FooterLinks from "./FooterLinks";
 
 const Footer = (): JSX.Element => {
   return (
@@ -30,7 +29,7 @@ const Footer = (): JSX.Element => {
                   height="100px"
                   src="/images/Prognosis.png"
                   alt="logo"
-                  rounded="lg"
+                  borderRadius="10px"
                 />
               </Box>
               <Text textStyle="defaultText">
@@ -57,90 +56,36 @@ const Footer = (): JSX.Element => {
                 <Heading fontSize={{ base: "16px", md: "xl" }}>
                   OUR SOLUTIONS
                 </Heading>
-                <Text textStyle="defaultText">
-                  Human Resource Management Solution
-                </Text>
-                <Text textStyle="defaultText">
-                  Insurance Broker Management Platform{" "}
-                </Text>
-                <Text textStyle="defaultText">
-                  HMO Insurance Management Solutions{" "}
-                </Text>
-                <Text textStyle="defaultText">General Insurance</Text>
-                <Text textStyle="defaultText">
-                  Accounting Software Solution
-                </Text>
+                <FooterLinks
+                  text="Accounting Software Solution"
+                  link="/accounting-software-solution"
+                />
+                <FooterLinks
+                  text="General Insurance Mangement"
+                  link="/general-insurance"
+                />
+                <FooterLinks
+                  text="HMO Insurance Management Solutions"
+                  link="/hmo-insurance-management-solution"
+                />
+                <FooterLinks
+                  text="Human Resource Management Solution"
+                  link="/human-resource-management-solution"
+                />
+                <FooterLinks
+                  text=" Insurance Broker Management Platform"
+                  link="/insurance-broker-management-platform"
+                />
               </Box>
               <Flex direction="column" gridGap="1em">
                 <Heading fontSize={{ base: "16px", md: "xl" }}>
                   QUICKS LINKS
                 </Heading>
-                <Text as={Link} href="/" textStyle="defaultText">
-                  <chakra.a
-                    _hover={{
-                      textDecoration: "underline",
-                      cursor: "pointer",
-                    }}
-                  >
-                    Home
-                  </chakra.a>
-                </Text>
-                <Text
-                  as={Link}
-                  href="/about"
-                  textDecoration="underline"
-                  textStyle="defaultText"
-                >
-                  <chakra.a
-                    _hover={{
-                      textDecoration: "underline",
-                      cursor: "pointer",
-                    }}
-                  >
-                    About Us
-                  </chakra.a>
-                </Text>
-                <Text as={Link} href="/services" textStyle="defaultText">
-                  <chakra.a
-                    _hover={{
-                      textDecoration: "underline",
-                      cursor: "pointer",
-                    }}
-                  >
-                    Our Services
-                  </chakra.a>
-                </Text>
-                <Text
-                  as={Link}
-                  href="/solution"
-                  lineHeight="1.7"
-                  fontSize={{ base: "sm", md: "15px" }}
-                >
-                  <chakra.a
-                    _hover={{
-                      textDecoration: "underline",
-                      cursor: "pointer",
-                    }}
-                  >
-                    {" "}
-                    Our Solutions
-                  </chakra.a>
-                </Text>
-                <Text
-                  as={Link}
-                  href="/contact"
-                  lineHeight="1.7"
-                  fontSize={{ base: "sm", md: "15px" }}
-                >
-                  <chakra.a
-                    _hover={{
-                      textDecoration: "underline",
-                      cursor: "pointer",
-                    }}
-                  >
-                    Contact
-                  </chakra.a>
-                </Text>
+                <FooterLinks text="Home" link="/" />
+                <FooterLinks text="About" link="/about" />
+                <FooterLinks text="Our Services" link="/services" />
+                <FooterLinks text="Our Solutions" link="/solution" />
+                <FooterLinks text="Contact" link="/contact" />
               </Flex>
             </Stack>
           </GridItem>

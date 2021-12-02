@@ -1,8 +1,9 @@
+import { useState } from "react";
 import { Button } from "@chakra-ui/button";
 import { Box, HStack, Stack } from "@chakra-ui/layout";
 import { chakra } from "@chakra-ui/system";
+import { RiSendPlaneLine } from "react-icons/ri";
 import { useToast } from "@chakra-ui/toast";
-import { useState } from "react";
 import { FormInput } from "../interfaces";
 import { InputField, SelectField, TextAreaField } from "./FormFields";
 
@@ -36,10 +37,6 @@ const ContactForm = (): JSX.Element => {
       service,
     };
     setisSubmitting(true);
-    // setTimeout(() => {
-    //   console.log(newFormState);
-    //   setisSubmitting(false);
-    // }, 2000);
     try {
       await fetch("/api/sendMail", {
         method: "POST",
@@ -61,9 +58,9 @@ const ContactForm = (): JSX.Element => {
         title: "Message Sent!",
         description: "Prognosis Technologies Limited will get back to you.",
         status: "success",
-        duration: 3500,
+        duration: 5000,
         variant: "top-accent",
-        position: "top",
+        position: "bottom",
         isClosable: true,
       });
     } catch (error) {
@@ -73,7 +70,7 @@ const ContactForm = (): JSX.Element => {
         title: "Something went wrong",
         description: "Prognosis Technologies Limited didn't receive the mail",
         status: "error",
-        position: "top",
+        position: "bottom",
         variant: "top-accent",
         isClosable: true,
       });
@@ -132,7 +129,9 @@ const ContactForm = (): JSX.Element => {
             type="submit"
             color="white"
             disabled={isSubmitting}
+            rounded="full"
             isLoading={isSubmitting}
+            rightIcon={<RiSendPlaneLine />}
             _hover={{
               bgColor: "#1A202C",
             }}
@@ -143,7 +142,7 @@ const ContactForm = (): JSX.Element => {
               boxShadow: "0 0 0 3px #1A202C",
             }}
           >
-            Send Message
+            Send
           </Button>
         </Box>
       </Stack>
