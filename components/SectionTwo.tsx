@@ -51,7 +51,7 @@ const SectionTwo = (): JSX.Element => {
                 <GridItem
                   justifySelf={{ base: "center", md: "" }}
                   width={{ base: "380px", md: "100%" }}
-                  height={{ base: "100px", md: "initial" }}
+                  height={{ base: "150px", md: "initial" }}
                 >
                   <ChakraNextImage
                     rounded="lg"
