@@ -8,7 +8,7 @@ import SiteMetaData from "../components/SiteMetaData";
 
 const Services = (): JSX.Element => {
   return (
-    <Box overflowX="hidden">
+    <Box>
       <SiteMetaData
         metaTitle="Services | Prognosis Technologies Limited"
         metaContent="Services |Prognosis Technologies Limited"

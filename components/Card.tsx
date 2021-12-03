@@ -6,7 +6,13 @@ const Card = ({ icon, title, text, w, h, alt }: CardProps): JSX.Element => {
   return (
     <HStack spacing={7} p={5} boxShadow="md" borderRadius="md">
       <Box>
-        <ChakraNextImage width={w} height={h} src={icon} alt={alt} />
+        <ChakraNextImage
+          priority={true}
+          width={w}
+          height={h}
+          src={icon}
+          alt={alt}
+        />
       </Box>
       <Box textAlign="left">
         <Text fontSize={{ base: "16px", md: "18px" }} fontWeight="bold" mb={1}>

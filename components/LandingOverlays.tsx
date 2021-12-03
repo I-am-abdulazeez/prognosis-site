@@ -25,6 +25,7 @@ const LandingOverlays = ({
       bgRepeat="no-repeat"
       bgAttachment="fixed"
       color="white"
+      top="2em"
     >
       <Flex
         align="center"

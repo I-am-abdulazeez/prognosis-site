@@ -24,7 +24,7 @@ const Navbar = (): JSX.Element => {
       top={0}
       right={0}
       bg="white"
-      zIndex={2}
+      zIndex={4}
       w="full"
       position="sticky"
       boxShadow="sm"
@@ -35,6 +35,7 @@ const Navbar = (): JSX.Element => {
           <Link href="/">
             <a>
               <ChakraNextImage
+                priority={true}
                 width="140px"
                 height="66px"
                 src="/images/Prognosis.png"
@@ -75,6 +76,7 @@ const Navbar = (): JSX.Element => {
               />
               <DrawerHeader>
                 <ChakraNextImage
+                  priority={true}
                   width="120px"
                   height="55px"
                   src="/images/Prognosis.png"

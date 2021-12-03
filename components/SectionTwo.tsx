@@ -59,6 +59,7 @@ const SectionTwo = (): JSX.Element => {
                     height="300.26px"
                     src={imageSrc}
                     alt="Accounting"
+                    priority={true}
                   />
                 </GridItem>
                 <GridItem width="100%" color="white">
