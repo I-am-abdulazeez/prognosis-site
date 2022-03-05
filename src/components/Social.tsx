@@ -35,9 +35,6 @@ const Social: React.FC = () => {
           _hover={{
             color: "#87F97D",
           }}
-          _active={{
-            bgColor: "none",
-          }}
           aria-label="facebook"
           icon={<RiFacebookCircleFill size="23px" />}
         />
@@ -49,9 +46,6 @@ const Social: React.FC = () => {
           color="#718096"
           _hover={{
             color: "#87F97D",
-          }}
-          _active={{
-            bgColor: "none",
           }}
           aria-label="facebook"
           icon={<RiTwitterFill size="23px" />}

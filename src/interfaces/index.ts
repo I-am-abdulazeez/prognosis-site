@@ -94,3 +94,10 @@ export interface SiteMetaDataProps {
   metaContent: string;
   metaContent2: string;
 }
+
+export interface NavLinkInterface {
+  href: string;
+  linkName: string;
+}
+
+export interface MenuLinksInterface extends NavLinkInterface {}

@@ -2,6 +2,7 @@ import { Box, Container, Heading, SimpleGrid, Text } from "@chakra-ui/layout";
 import ScrollAnimation from "react-animate-on-scroll";
 
 import { chakra } from "@chakra-ui/system";
+
 import Card from "../Card/Card";
 
 const SectionOne: React.FC = () => {

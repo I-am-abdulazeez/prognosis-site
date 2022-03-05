@@ -1,5 +1,7 @@
 import {
   cardItems,
+  MenuLinksInterface,
+  NavLinkInterface,
   serviceCategory,
   SwipeCardDetails,
   SwipeDetails,
@@ -203,5 +205,43 @@ export const tabList: TabListOpts[] = [
     heading: " Internet of Things ",
     text: "Introduce Internet of Things (IoT) to your operations to improve workplace safety, reduce operation cost, enhance customer and experience. Prognosis Technologies an IoT Software Development Company; as the world moves toward a more connected future, we're ready to help your business adapt and thrive. Our custom solutions enable cutting-edge cloud technologies, opening up a new world of revenue - creating possibilities. Prognosis Technologies blueprint software to create an ocean of opportunities for your business with IoT.",
     abbr: "IOT",
+  },
+];
+
+export const navLinks: NavLinkInterface[] = [
+  {
+    href: "/",
+    linkName: "Home",
+  },
+  {
+    href: "/about",
+    linkName: "About",
+  },
+  {
+    href: "/services",
+    linkName: "Services",
+  },
+];
+
+export const menuLinks: MenuLinksInterface[] = [
+  {
+    href: "/accounting-software-solution",
+    linkName: "Accounting Software Solution",
+  },
+  {
+    href: "/general-insurance",
+    linkName: "General Insurance Management",
+  },
+  {
+    href: "/hmo-insurance-management-solution",
+    linkName: "HMO Insurance Management Solution",
+  },
+  {
+    href: "/human-resource-management-solution",
+    linkName: "Human Resource Management Solution",
+  },
+  {
+    href: "/insurance-broker-management-platform",
+    linkName: "Insurance Broker Management Platform",
   },
 ];

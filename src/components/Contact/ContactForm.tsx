@@ -134,7 +134,6 @@ const ContactForm = (): JSX.Element => {
             type="submit"
             color="white"
             disabled={isSubmitting}
-            rounded="full"
             isLoading={isSubmitting}
             rightIcon={<RiSendPlaneLine />}
             _hover={{
@@ -142,9 +141,6 @@ const ContactForm = (): JSX.Element => {
             }}
             _active={{
               bgColor: "#1A202C",
-            }}
-            _focus={{
-              boxShadow: "0 0 0 3px #1A202C",
             }}
           >
             Send

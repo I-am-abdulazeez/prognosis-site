@@ -81,16 +81,12 @@ const SectionTwo: React.FC = () => {
                   </Text>
                   <Button
                     size="sm"
-                    rounded="full"
                     color="#1A202C"
                     _hover={{
                       bgColor: "#8ef985",
                     }}
                     _active={{
                       bgColor: "#8ef985",
-                    }}
-                    _focus={{
-                      boxShadow: "0 0 0 2px #24db14",
                     }}
                     bgColor="#8ef985"
                   >

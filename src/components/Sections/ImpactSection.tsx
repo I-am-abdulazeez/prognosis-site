@@ -10,6 +10,7 @@ import {
   Text,
 } from "@chakra-ui/layout";
 import ScrollAnimation from "react-animate-on-scroll";
+
 import { chakra } from "@chakra-ui/system";
 
 const ImpactSection: React.FC = () => {
@@ -44,7 +45,6 @@ const ImpactSection: React.FC = () => {
               <Button
                 as="a"
                 size="sm"
-                rounded="full"
                 color="#1A202C"
                 _hover={{
                   bgColor: "#8ef985",

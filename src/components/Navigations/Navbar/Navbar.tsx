@@ -51,12 +51,8 @@ const Navbar: React.FC = () => {
               icon={<HiMenuAlt3 size="22px" />}
               onClick={onOpen}
               size="sm"
-              rounded="full"
               variant="solid"
               colorScheme="primary"
-              _focus={{
-                boxShadow: "0 0 0 2px #a2f69b",
-              }}
             />
           </Box>
           <LargeScreenLinks />
@@ -69,13 +65,7 @@ const Navbar: React.FC = () => {
           >
             <DrawerOverlay />
             <DrawerContent>
-              <DrawerCloseButton
-                _focus={{
-                  boxShadow: "0 0 0 2px #24db14",
-                }}
-                size="sm"
-                rounded="full"
-              />
+              <DrawerCloseButton size="sm" rounded="full" />
               <DrawerHeader>
                 <ChakraNextImage
                   priority={true}

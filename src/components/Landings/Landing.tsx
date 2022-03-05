@@ -68,7 +68,6 @@ const Landing: React.FC = () => {
               <Button
                 size="sm"
                 as="a"
-                rounded="full"
                 href="/services"
                 mt={{ base: 4, md: 5 }}
                 color="#1A202C"
@@ -78,9 +77,6 @@ const Landing: React.FC = () => {
                 _active={{
                   bgColor: "#8ef985",
                 }}
-                _focus={{
-                  boxShadow: "0 0 0 2px #24db14",
-                }}
                 bgColor="#8ef985"
               >
                 Learn more
@@ -88,12 +84,13 @@ const Landing: React.FC = () => {
             </Link>
           </GridItem>
           <GridItem justifySelf="end" display={showImage}>
-            <ScrollAnimation animateOnce={false} animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__pulse">
               <ChakraNextImage
-                width="400px"
-                height="400.26px"
+                width="350px"
+                height="350.26px"
                 src="/images/landing.svg"
-                alt="logo"
+                alt="landing"
+                priority={true}
               />
             </ScrollAnimation>
           </GridItem>

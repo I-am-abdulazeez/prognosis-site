@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import { IoIosArrowRoundUp } from "react-icons/io";
 
 const ScrollToTop: React.FC = () => {
-  const buttonSize = useBreakpointValue({ base: "sm", md: "md" });
+  const buttonSize = useBreakpointValue({ base: "xs", md: "sm" });
   const [isVisible, setIsVisible] = useState(false);
   const scrollToTop = () => {
     window.scrollTo({
@@ -34,12 +34,9 @@ const ScrollToTop: React.FC = () => {
         <IconButton
           aria-label="go-up"
           onClick={scrollToTop}
-          rounded="full"
+          rounded="md"
           icon={<IoIosArrowRoundUp size="25px" />}
           size={buttonSize}
-          _focus={{
-            boxShadow: "0 0 0 3px #24db14",
-          }}
           colorScheme="primary"
         />
       )}
