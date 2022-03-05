@@ -5,7 +5,7 @@ import {
   RiTwitterFill,
 } from "react-icons/ri";
 
-const Social = (): JSX.Element => {
+const Social: React.FC = () => {
   return (
     <div>
       <Box

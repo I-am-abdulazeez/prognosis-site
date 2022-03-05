@@ -1,16 +1,12 @@
 import Head from "next/head";
 
-interface SiteMetaDataProps {
-  metaTitle: string;
-  metaContent: string;
-  metaContent2: string;
-}
+import { SiteMetaDataProps } from "@interfaces/index";
 
-const SiteMetaData = ({
+const SiteMetaData: React.FC<SiteMetaDataProps> = ({
   metaTitle,
   metaContent,
   metaContent2,
-}: SiteMetaDataProps) => {
+}) => {
   return (
     <Head>
       <title>{metaTitle}</title>

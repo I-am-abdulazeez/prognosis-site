@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { Button } from "@chakra-ui/button";
 import { Box, HStack, Stack } from "@chakra-ui/layout";
-import { chakra } from "@chakra-ui/system";
 import { RiSendPlaneLine } from "react-icons/ri";
+
 import { useToast } from "@chakra-ui/toast";
+import { chakra } from "@chakra-ui/system";
 
 import TextAreaField from "../FormFields/TextAreaField";
 import InputField from "../FormFields/InputField";
 import SelectField from "../FormFields/SelectField";
 
-import { FormInput } from "../../interfaces";
+import { FormInput } from "@interfaces/index";
 
 const ContactForm = (): JSX.Element => {
   const toast = useToast();

@@ -1,6 +1,8 @@
 import { Box, HStack, Text } from "@chakra-ui/layout";
-import { CardProps } from "../../interfaces";
+
 import { ChakraNextImage } from "../ChakraImage/ChakraImage";
+
+import { CardProps } from "@interfaces/index";
 
 const Card: React.FC<CardProps> = ({ icon, title, text, w, h, alt }) => {
   return (

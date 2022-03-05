@@ -12,10 +12,10 @@ import SwiperCore, {
 import ScrollToTop from "../components/ScrollToTop";
 
 import "animate.css/animate.min.css";
-import "swiper/swiper-bundle.min.css";
-import "../styles/globals.css";
+import "swiper/css";
+import "@styles/globals.css";
 
-import theme from "../theme";
+import theme from "@theme/index";
 
 SwiperCore.use([Navigation, Pagination, Lazy, Autoplay, EffectCoverflow]);
 

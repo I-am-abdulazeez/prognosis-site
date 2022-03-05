@@ -2,9 +2,11 @@ import { Avatar } from "@chakra-ui/avatar";
 import { Image } from "@chakra-ui/image";
 import { Box, Flex, Text } from "@chakra-ui/layout";
 import { useBreakpointValue } from "@chakra-ui/media-query";
+
 import { Swiper, SwiperSlide } from "swiper/react";
-import { testimonialItems } from "../data";
-import { TestimonialDetails } from "../interfaces";
+
+import { testimonialItems } from "@data/index";
+import { TestimonialDetails } from "@interfaces/index";
 
 const Testimonials: React.FC = () => {
   const avatarSize = useBreakpointValue({ base: "sm", md: "md" });

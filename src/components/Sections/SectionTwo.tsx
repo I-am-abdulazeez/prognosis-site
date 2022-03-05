@@ -11,10 +11,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { ChakraNextImage } from "../ChakraImage/ChakraImage";
 
-import { swiperItems2 } from "../../data";
-import { SwipeDetails } from "../../interfaces";
+import { swiperItems2 } from "@data/index";
+import { SwipeDetails } from "@interfaces/index";
 
-const SectionTwo = (): JSX.Element => {
+const SectionTwo: React.FC = () => {
   return (
     <Box>
       <Container maxW="container.xl">

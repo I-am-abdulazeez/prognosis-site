@@ -8,10 +8,10 @@ import {
 } from "@chakra-ui/layout";
 import { chakra } from "@chakra-ui/system";
 
-import { cardsArray } from "../../data";
-import { cardItems } from "../../interfaces";
+import { cardsArray } from "@data/index";
+import { cardItems } from "@interfaces/index";
 
-const AboutSection = (): JSX.Element => {
+const AboutSection: React.FC = () => {
   return (
     <Container maxW="container.xl">
       <Flex

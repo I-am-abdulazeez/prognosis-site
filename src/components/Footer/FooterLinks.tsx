@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Text } from "@chakra-ui/layout";
 import { chakra } from "@chakra-ui/system";
 
-import { FooterLinksProps } from "../../interfaces";
+import { FooterLinksProps } from "@interfaces/index";
 
 const FooterLinks: React.FC<FooterLinksProps> = ({ text, link }) => {
   return (

@@ -1,6 +1,6 @@
 import { Box, Heading, Text } from "@chakra-ui/layout";
 
-import { RoundCardProps } from "../../interfaces";
+import { RoundCardProps } from "@interfaces/index";
 
 const RoundCard: React.FC<RoundCardProps> = ({
   bgColor,

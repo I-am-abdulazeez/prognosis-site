@@ -80,3 +80,17 @@ export interface FooterLinksProps {
   text: string;
   link: string | UrlObject;
 }
+
+export interface LandingOverlayProps {
+  bgImage: string;
+  firstText: string;
+  titleText: string;
+  hasSecondText: boolean;
+  secondText?: string;
+}
+
+export interface SiteMetaDataProps {
+  metaTitle: string;
+  metaContent: string;
+  metaContent2: string;
+}

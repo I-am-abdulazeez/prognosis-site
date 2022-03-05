@@ -1,5 +1,6 @@
 import { FormControl, FormLabel, Textarea } from "@chakra-ui/react";
-import { TextAreaFieldProps } from "../../../interfaces";
+
+import { TextAreaFieldProps } from "@interfaces/index";
 
 const TextAreaField: React.FC<TextAreaFieldProps> = ({
   name,

@@ -1,15 +1,9 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/layout";
 import ScrollAnimation from "react-animate-on-scroll";
 
-type LandingOverProps = {
-  bgImage: string;
-  firstText: string;
-  titleText: string;
-  hasSecondText: boolean;
-  secondText?: string;
-};
+import { LandingOverlayProps } from "@interfaces/index";
 
-const LandingOverlays: React.FC<LandingOverProps> = ({
+const LandingOverlays: React.FC<LandingOverlayProps> = ({
   bgImage,
   firstText,
   titleText,

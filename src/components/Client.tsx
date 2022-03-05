@@ -1,7 +1,7 @@
 import { Image } from "@chakra-ui/image";
 import { Container, Heading, SimpleGrid } from "@chakra-ui/layout";
 
-const Client = (): JSX.Element => {
+const Client: React.FC = () => {
   return (
     <Container maxW="container.xl">
       <Heading

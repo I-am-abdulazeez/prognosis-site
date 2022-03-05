@@ -4,7 +4,7 @@ import { useBreakpointValue } from "@chakra-ui/media-query";
 import React, { useEffect, useState } from "react";
 import { IoIosArrowRoundUp } from "react-icons/io";
 
-const ScrollToTop = () => {
+const ScrollToTop: React.FC = () => {
   const buttonSize = useBreakpointValue({ base: "sm", md: "md" });
   const [isVisible, setIsVisible] = useState(false);
   const scrollToTop = () => {

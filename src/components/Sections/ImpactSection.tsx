@@ -9,10 +9,10 @@ import {
   Heading,
   Text,
 } from "@chakra-ui/layout";
-import { chakra } from "@chakra-ui/system";
 import ScrollAnimation from "react-animate-on-scroll";
+import { chakra } from "@chakra-ui/system";
 
-const ImpactSection = (): JSX.Element => {
+const ImpactSection: React.FC = () => {
   return (
     <Box py={{ base: "4em", md: "5em" }}>
       <Container maxW="container.xl">

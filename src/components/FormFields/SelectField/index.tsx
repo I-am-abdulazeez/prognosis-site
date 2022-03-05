@@ -1,6 +1,7 @@
 import { FormControl, FormLabel, Select } from "@chakra-ui/react";
-import { servicesCategory } from "../../../data";
-import { SelectFieldProps, serviceCategory } from "../../../interfaces";
+
+import { servicesCategory } from "@data/index";
+import { SelectFieldProps, serviceCategory } from "@interfaces/index";
 
 const SelectField: React.FC<SelectFieldProps> = ({
   name,

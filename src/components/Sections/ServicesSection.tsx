@@ -13,8 +13,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import TabSection from "./TabSection";
 
-import { swiperItems } from "../../data";
-import { SwipeCardDetails } from "../../interfaces";
+import { swiperItems } from "@data/index";
+import { SwipeCardDetails } from "@interfaces/index";
 
 const MotionBox = motion(Box);
 

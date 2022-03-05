@@ -1,6 +1,6 @@
 import { FormControl, FormLabel, Input } from "@chakra-ui/react";
 
-import { InputFieldProps } from "../../../interfaces";
+import { InputFieldProps } from "@interfaces/index";
 
 const InputField: React.FC<InputFieldProps> = ({
   name,

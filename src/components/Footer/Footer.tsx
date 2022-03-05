@@ -9,6 +9,7 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/layout";
+
 import { ChakraNextImage } from "../ChakraImage/ChakraImage";
 import Social from "../Social";
 import FooterLinks from "./FooterLinks";

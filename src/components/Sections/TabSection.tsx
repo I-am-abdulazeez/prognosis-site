@@ -2,8 +2,8 @@ import { Box, Container, Divider, Heading, Text } from "@chakra-ui/layout";
 import { useMediaQuery } from "@chakra-ui/media-query";
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/tabs";
 
-import { tabList } from "../../data";
-import { TabListOpts } from "../../interfaces";
+import { tabList } from "@data/index";
+import { TabListOpts } from "@interfaces/index";
 
 const TabSection: React.FC = () => {
   const [isLargerThan480] = useMediaQuery("(min-width: 480px)");

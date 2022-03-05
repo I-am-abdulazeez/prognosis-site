@@ -10,11 +10,12 @@ import {
 import ScrollAnimation from "react-animate-on-scroll";
 
 import { useBreakpointValue } from "@chakra-ui/media-query";
+
 import { chakra } from "@chakra-ui/system";
 
-import { ourTeam } from "../data";
+import { ourTeam } from "@data/index";
 
-const Team = (): JSX.Element => {
+const Team: React.FC = () => {
   const avatarSize = useBreakpointValue({ base: "lg", md: "lg" });
 
   return (

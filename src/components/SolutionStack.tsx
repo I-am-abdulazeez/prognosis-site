@@ -2,7 +2,7 @@ import { HStack, Stack, Text } from "@chakra-ui/layout";
 import { MdFilterFrames } from "react-icons/md";
 import { SiFsecure } from "react-icons/si";
 
-const SolutionStack = () => {
+const SolutionStack: React.FC = () => {
   return (
     <Stack
       align="center"
