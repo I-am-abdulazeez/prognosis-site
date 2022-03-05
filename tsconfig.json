@@ -7,6 +7,13 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components*": ["src/components*"],
+      "@pages*": ["src/pages*"],
+      "@styles*": ["src/styles*"],
+      "@theme*": ["src/theme*"]
+    },
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
