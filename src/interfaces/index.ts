@@ -1,4 +1,3 @@
-import { nanoid } from "nanoid";
 import { UrlObject } from "url";
 
 export interface SwipeDetails {
