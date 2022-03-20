@@ -27,6 +27,10 @@ body::-webkit-scrollbar-thumb:hover {
   background: #0fbf44;
 }
 
+.swiper-pagination-bullet-active {
+  background: #0fbf44;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   color: #0fbf44;
@@ -35,6 +39,7 @@ body::-webkit-scrollbar-thumb:hover {
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: xx-large;
+  color: #0fbf44;
 }
 
 @media only screen and (max-width: 780px) {

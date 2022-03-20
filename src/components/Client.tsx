@@ -15,7 +15,7 @@ const Client: React.FC = () => {
 
       <SimpleGrid
         columns={{ base: 2, sm: 4, md: 7 }}
-        spacing={{ base: "1em", md: 6 }}
+        spacing={{ base: "1em", md: 9 }}
         alignItems="center"
         mt={{ base: 7, md: 14 }}
       >

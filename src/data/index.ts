@@ -280,8 +280,26 @@ export const clientImage: ClientImage[] = [
   },
   {
     alt: "cleint-5",
-    src: "/images/oceanic-health.png",
-    width: "500px",
-    height: "300px",
+    src: "/images/carenet-logo.png",
+    width: "200px",
+    height: "80px",
+  },
+  {
+    alt: "cleint-6",
+    src: "/images/aicug-logo.png",
+    width: "90px",
+    height: "80px",
+  },
+  {
+    alt: "cleint-7",
+    src: "/images/prestige-logo.png",
+    width: "1000px",
+    height: "400px",
+  },
+  {
+    alt: "cleint-8",
+    src: "/images/profin-logo.png",
+    width: "120px",
+    height: "50px",
   },
 ];
