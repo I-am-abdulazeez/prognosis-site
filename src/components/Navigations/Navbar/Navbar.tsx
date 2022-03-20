@@ -37,7 +37,6 @@ const Navbar: React.FC = () => {
           <Link href="/">
             <a>
               <ChakraNextImage
-                priority={true}
                 width="140px"
                 height="66px"
                 src="/images/Prognosis.png"
@@ -68,7 +67,6 @@ const Navbar: React.FC = () => {
               <DrawerCloseButton size="sm" rounded="full" />
               <DrawerHeader>
                 <ChakraNextImage
-                  priority={true}
                   width="120px"
                   height="55px"
                   src="/images/Prognosis.png"

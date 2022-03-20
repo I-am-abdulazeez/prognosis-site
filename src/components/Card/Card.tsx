@@ -8,13 +8,7 @@ const Card: React.FC<CardProps> = ({ icon, title, text, w, h, alt }) => {
   return (
     <HStack spacing={7} p={5} boxShadow="md" borderRadius="md">
       <Box>
-        <ChakraNextImage
-          priority={true}
-          width={w}
-          height={h}
-          src={icon}
-          alt={alt}
-        />
+        <ChakraNextImage width={w} height={h} src={icon} alt={alt} />
       </Box>
       <Box textAlign="left">
         <Text fontSize={{ base: "16px", md: "18px" }} fontWeight="bold" mb={1}>

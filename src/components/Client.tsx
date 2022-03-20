@@ -1,5 +1,7 @@
-import { Image } from "@chakra-ui/image";
 import { Container, Heading, SimpleGrid } from "@chakra-ui/layout";
+import { clientImage } from "@data/index";
+
+import { ChakraNextImage } from "./ChakraImage/ChakraImage";
 
 const Client: React.FC = () => {
   return (
@@ -8,21 +10,24 @@ const Client: React.FC = () => {
         w={{ base: "100%", md: "80%" }}
         fontSize={{ base: "25px", md: "3xl" }}
       >
-        Clients who trust us
+        Clients who trust us...
       </Heading>
 
       <SimpleGrid
-        columns={{ base: 3, sm: 4, md: 7 }}
-        spacing={{ base: "1em", md: 10 }}
+        columns={{ base: 2, sm: 4, md: 7 }}
+        spacing={{ base: "1em", md: 6 }}
+        alignItems="center"
         mt={{ base: 7, md: 14 }}
       >
-        <Image boxSize="100px" src="/images/client-1.svg" alt="client-1" />
-        <Image boxSize="100px" src="/images/client-1.svg" alt="client-1" />
-        <Image boxSize="100px" src="/images/client-1.svg" alt="client-1" />
-        <Image boxSize="100px" src="/images/client-1.svg" alt="client-1" />
-        <Image boxSize="100px" src="/images/client-1.svg" alt="client-1" />
-        <Image boxSize="100px" src="/images/client-1.svg" alt="client-1" />
-        <Image boxSize="100px" src="/images/client-1.svg" alt="client-1" />
+        {clientImage.map(({ alt, src, width, height }, idx) => (
+          <ChakraNextImage
+            key={idx}
+            width={width}
+            height={height}
+            src={src}
+            alt={alt}
+          />
+        ))}
       </SimpleGrid>
     </Container>
   );

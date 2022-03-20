@@ -12,6 +12,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 import { chakra } from "@chakra-ui/system";
 
+import { Image } from "@chakra-ui/react";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import { ChakraNextImage } from "../ChakraImage/ChakraImage";
 
@@ -84,13 +85,12 @@ const Landing: React.FC = () => {
             </Link>
           </GridItem>
           <GridItem justifySelf="end" display={showImage}>
-            <ScrollAnimation animateIn="animate__pulse">
+            <ScrollAnimation animateIn="animate__pulse" initiallyVisible={true}>
               <ChakraNextImage
                 width="350px"
                 height="350.26px"
                 src="/images/landing.svg"
-                alt="landing"
-                priority={true}
+                alt="landing-page-svg"
               />
             </ScrollAnimation>
           </GridItem>

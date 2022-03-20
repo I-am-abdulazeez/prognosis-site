@@ -1,5 +1,6 @@
 import {
   cardItems,
+  ClientImage,
   MenuLinksInterface,
   NavLinkInterface,
   serviceCategory,
@@ -8,7 +9,7 @@ import {
   TabListOpts,
   TeamList,
   TestimonialDetails,
-} from "../interfaces";
+} from "@interfaces/index";
 
 import ReactParser from "html-react-parser";
 import { nanoid } from "nanoid";
@@ -243,5 +244,44 @@ export const menuLinks: MenuLinksInterface[] = [
   {
     href: "/insurance-broker-management-platform",
     linkName: "Insurance Broker Management Platform",
+  },
+];
+
+export const clientImage: ClientImage[] = [
+  {
+    alt: "cleint-1",
+    src: "/images/lashma-logo.jpg",
+    width: "100px",
+    height: "100px",
+  },
+  {
+    alt: "cleint-1",
+    src: "/images/Leadway-Health.png",
+    width: "500px",
+    height: "300px",
+  },
+  {
+    alt: "cleint-2",
+    src: "/images/mediplan.png",
+    width: "500px",
+    height: "300px",
+  },
+  {
+    alt: "cleint-3",
+    src: "/images/ckline-logo.png",
+    width: "500px",
+    height: "300px",
+  },
+  {
+    alt: "cleint-4",
+    src: "/images/health_assur.svg",
+    width: "500px",
+    height: "300px",
+  },
+  {
+    alt: "cleint-5",
+    src: "/images/oceanic-health.png",
+    width: "500px",
+    height: "300px",
   },
 ];

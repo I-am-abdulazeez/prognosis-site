@@ -65,7 +65,10 @@ const Home: React.FC = () => {
         </Container>
       </Box>
       <ImpactSection />
-      <Box bg="#EEF2F6" py={6}>
+      <Heading textAlign={"center"} fontSize={{ base: "25px", md: "2xl" }}>
+        What our people say about us...
+      </Heading>
+      <Box bg="#EEF2F6" mt={7} py={6}>
         <Testimonials />
       </Box>
       <Box py="4em">

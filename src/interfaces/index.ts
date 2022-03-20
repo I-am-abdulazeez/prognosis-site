@@ -17,6 +17,13 @@ export interface TeamList {
   userText: string | JSX.Element | JSX.Element[];
 }
 
+export interface ClientImage {
+  alt: string;
+  src: string;
+  width: string;
+  height: string;
+}
+
 export interface CardProps {
   icon: string;
   title: string;

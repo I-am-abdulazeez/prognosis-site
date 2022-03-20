@@ -6,6 +6,7 @@ import { useBreakpointValue } from "@chakra-ui/media-query";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { testimonialItems } from "@data/index";
+import { Heading } from "@chakra-ui/react";
 
 const Testimonials: React.FC = () => {
   const avatarSize = useBreakpointValue({ base: "sm", md: "md" });

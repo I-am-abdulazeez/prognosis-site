@@ -28,7 +28,6 @@ const Footer: React.FC = () => {
                 <ChakraNextImage
                   width="200px"
                   height="100px"
-                  priority={true}
                   src="/images/Prognosis.png"
                   alt="logo"
                   borderRadius="10px"
