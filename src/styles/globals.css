@@ -24,11 +24,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .swiper-pagination-bullet {
-  background: #0fbf44;
+  background-color: #0fbf44;
 }
 
+.swiper-pagination-bullet-dyanamic,
 .swiper-pagination-bullet-active {
-  background: #0fbf44;
+  background-color: #0fbf44;
 }
 
 .swiper-button-next,
