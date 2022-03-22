@@ -1,7 +1,8 @@
 import { Container, Heading, SimpleGrid } from "@chakra-ui/layout";
-import { clientImage } from "@data/index";
 
 import { ChakraNextImage } from "./ChakraImage/ChakraImage";
+
+import { clientImage } from "@data/index";
 
 const Client: React.FC = () => {
   return (

@@ -9,15 +9,18 @@ import SwiperCore, {
   Autoplay,
   EffectCoverflow,
 } from "swiper";
-import ScrollToTop from "../components/ScrollToTop";
+import ScrollToTop from "@components/ScrollToTop";
 
 import "animate.css/animate.min.css";
+
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "@styles/globals.css";
+import "swiper/css/navigation";
+import "swiper/css/effect-coverflow";
 
 import theme from "@theme/index";
+
+import "@styles/globals.css";
 
 SwiperCore.use([Navigation, Pagination, Lazy, Autoplay, EffectCoverflow]);
 
