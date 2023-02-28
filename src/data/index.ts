@@ -77,7 +77,9 @@ export const ourTeam: TeamList[] = [
     username: 'Opeyemi Oshoala',
     userPosition: 'Software Developer',
     userAvatar: '',
-    userText: ReactParser(``),
+    userText:
+      ReactParser(`An avid IT solution provider , Opeyemi joined Prognosis in 2020 as a trainee and has grown through the ranks to be a Developer and Support Officer.
+    He is a graduate from Middlesex University with a Bsc in Computer Science. Also an Advanced Diploma holder in Software Engineering at Aptech Computer Institute.`),
   },
   {
     username: 'Tapfuma Michael Nhengu CAT, PMP, PRINCE 2 ',
