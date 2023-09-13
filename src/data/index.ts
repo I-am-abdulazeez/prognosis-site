@@ -65,14 +65,18 @@ export const ourTeam: TeamList[] = [
       management. Ifeanyi is currently <span className="semibold">Team Lead</span> on our platform multi-lingual upgrade project. Systems
       Engineering is his passion.`),
   },
-  // {
-  //   username: "Akolade Mustapha",
-  //   userPosition: "Software Developer",
-  //   userAvatar: "",
-  //   userText:
-  //     ReactParser(`Akolade is an Engineering graduate from Syracuse university in New York, USA. He just joined Prognosis,
-  //   January 2020, as a graduate <span className="semibold">software development trainee</span>. His main passion is in developing applications
-  //   and problem solving complex scenarios. He was an intern at <span className="semibold">Coscharis</span> before joining Prognosis`),
+  {
+    username: 'Akolade Mustapha',
+    userPosition: 'Software Developer',
+    userAvatar: '',
+    // userText:
+    //   ReactParser(`Akolade is an Engineering graduate from Syracuse university in New York, USA. He just joined Prognosis,
+    // January 2020, as a graduate <span className="semibold">software development trainee</span>. His main passion is in developing applications
+    // and problem solving complex scenarios. He was an intern at <span className="semibold">Coscharis</span> before joining Prognosis`),
+    userText: ReactParser(
+      `Post Graduate Certificate holder in Cloud Computing from the University of Texas, Austin, and a graduate from Syracuse University in Mechancial Engineering, Akolade Mustapha is the Backend Developer of our esteemed team.  He is in charge of Backend Activities including backend development and data analytics and management, as well as database maintenance and security. He has led projects in developing several Dashboards and Portals for our clients. He is a Software developer with a nack for problem solving.`
+    ),
+  },
   {
     username: 'Opeyemi Oshoala',
     userPosition: 'Software Developer',
