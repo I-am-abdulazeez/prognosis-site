@@ -281,21 +281,21 @@ export const clientImage: ClientImage[] = [
   },
   {
     alt: 'cleint-2',
-    src: '/images/mediplan.png',
-    width: '500px',
+    src: '/images/star-health.png',
+    width: '300px',
     height: '300px',
   },
   {
     alt: 'cleint-3',
-    src: '/images/ckline-logo.png',
-    width: '500px',
+    src: '/images/horizon.png',
+    width: '400px',
     height: '300px',
   },
   {
     alt: 'cleint-4',
-    src: '/images/health_assur.svg',
-    width: '500px',
-    height: '300px',
+    src: '/images/gene-health.png',
+    width: '600px',
+    height: '150px',
   },
   {
     alt: 'cleint-5',
