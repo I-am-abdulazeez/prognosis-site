@@ -1,22 +1,22 @@
-import { Container, Heading, SimpleGrid } from "@chakra-ui/layout";
+import { Container, Heading, SimpleGrid } from '@chakra-ui/layout';
 
-import { ChakraNextImage } from "./ChakraImage/ChakraImage";
+import { ChakraNextImage } from './ChakraImage/ChakraImage';
 
-import { clientImage } from "@data/index";
+import { clientImage } from '@data/index';
 
 const Client: React.FC = () => {
   return (
     <Container maxW="container.xl">
       <Heading
-        w={{ base: "100%", md: "80%" }}
-        fontSize={{ base: "25px", md: "3xl" }}
+        w={{ base: '100%', md: '80%' }}
+        fontSize={{ base: '25px', md: '3xl' }}
       >
         Clients who trust us...
       </Heading>
 
       <SimpleGrid
         columns={{ base: 2, sm: 4, md: 7 }}
-        spacing={{ base: "1em", md: 9 }}
+        spacing={{ base: '1em', md: 9 }}
         alignItems="center"
         mt={{ base: 7, md: 14 }}
       >
