@@ -321,4 +321,10 @@ export const clientImage: ClientImage[] = [
     width: '120px',
     height: '50px',
   },
+  {
+    alt: 'cleint-9',
+    src: '/images/masca.png',
+    width: '120px',
+    height: '50px',
+  },
 ];
