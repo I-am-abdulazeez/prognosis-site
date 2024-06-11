@@ -327,4 +327,10 @@ export const clientImage: ClientImage[] = [
     width: '120px',
     height: '50px',
   },
+  {
+    alt: 'cleint-10',
+    src: '/images/avon.jpg',
+    width: '120px',
+    height: '50px',
+  },
 ];
