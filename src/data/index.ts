@@ -268,49 +268,49 @@ export const menuLinks: MenuLinksInterface[] = [
 
 export const clientImage: ClientImage[] = [
   {
-    alt: 'cleint-1',
+    alt: 'client-1',
     src: '/images/lashma-logo.jpg',
     width: '100px',
     height: '100px',
   },
   {
-    alt: 'cleint-1',
+    alt: 'client-1',
     src: '/images/Leadway-Health.png',
     width: '500px',
     height: '300px',
   },
   {
-    alt: 'cleint-2',
+    alt: 'client-2',
     src: '/images/star-health.png',
     width: '300px',
     height: '300px',
   },
   {
-    alt: 'cleint-3',
+    alt: 'client-3',
     src: '/images/horizon.png',
     width: '400px',
     height: '300px',
   },
   {
-    alt: 'cleint-4',
+    alt: 'client-4',
     src: '/images/gene-health.png',
     width: '600px',
     height: '150px',
   },
   {
-    alt: 'cleint-5',
+    alt: 'client-5',
     src: '/images/carenet-logo.png',
     width: '200px',
     height: '80px',
   },
   {
-    alt: 'cleint-6',
+    alt: 'client-6',
     src: '/images/aicug-logo.png',
     width: '90px',
     height: '80px',
   },
   {
-    alt: 'cleint-7',
+    alt: 'client-7',
     src: '/images/prestige-logo.png',
     width: '1000px',
     height: '400px',
@@ -322,15 +322,15 @@ export const clientImage: ClientImage[] = [
     height: '50px',
   },
   {
-    alt: 'cleint-9',
+    alt: 'client-9',
     src: '/images/masca.png',
     width: '120px',
     height: '50px',
   },
   {
-    alt: 'cleint-10',
+    alt: 'client-10',
     src: '/images/avon.jpg',
     width: '120px',
-    height: '50px',
+    height: '100px',
   },
 ];
