@@ -91,6 +91,26 @@ const Footer: React.FC = () => {
             </Stack>
           </GridItem>
         </Grid>
+
+        {/* Legal Links Section */}
+        <Box mt={8} pt={6} borderTop="1px solid" borderColor="gray.700">
+          <Flex
+            justify={{ base: "center", md: "space-between" }}
+            align="center"
+            direction={{ base: "column", md: "row" }}
+            gap={{ base: 4, md: 0 }}
+          >
+            <Text color="#718096" fontSize={{ base: "sm", md: "15px" }}>
+              © {new Date().getFullYear()} Prognosis Technologies Limited. All
+              rights reserved.
+            </Text>
+            <Flex gap={6} color="#718096" fontSize={{ base: "sm", md: "15px" }}>
+              <FooterLinks text="Privacy Policy" link="/privacy-policy" />
+              <FooterLinks text="Terms of Service" link="/terms-of-service" />
+            </Flex>
+          </Flex>
+        </Box>
+
         <Social />
       </Container>
     </Box>
