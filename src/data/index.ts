@@ -312,8 +312,8 @@ export const clientImage: ClientImage[] = [
   {
     alt: 'client-8',
     src: '/images/prestige-logo.png',
-    width: '1000px',
-    height: '400px',
+    width: '2500px',
+    height: '800px',
   },
   {
     alt: 'cleint-9',
@@ -338,5 +338,17 @@ export const clientImage: ClientImage[] = [
     src: '/images/noor.png',
     width: '150px',
     height: '100px',
+  },
+  {
+    alt: 'client-13',
+    src: '/images/mutual.png',
+    width: '240px',
+    height: '100px',
+  },
+  {
+    alt: 'client-14',
+    src: '/images/nem-health.jpg',
+    width: '200px',
+    height: '80px',
   },
 ];
