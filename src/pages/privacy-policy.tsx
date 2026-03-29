@@ -155,9 +155,59 @@ const PrivacyPolicy: React.FC = () => {
               </Text>
             </Box>
 
+            {/* NEW SECTION — added to satisfy Google Play data retention requirement */}
             <Box>
               <Heading fontSize={{ base: "20px", md: "2xl" }} mb={4}>
-                5. Your Rights
+                5. Data Retention and Deletion
+              </Heading>
+              <Text
+                fontSize={{ base: "sm", md: "15px" }}
+                lineHeight="1.7"
+                mb={3}
+              >
+                We retain your personal and health-related data only for as long
+                as is necessary to provide our services and comply with our
+                legal obligations.
+              </Text>
+              <UnorderedList
+                spacing={2}
+                fontSize={{ base: "sm", md: "15px" }}
+                lineHeight="1.7"
+                pl={5}
+              >
+                <ListItem>
+                  <strong>Account Data:</strong> Personal information such as
+                  your name, email address, and phone number is retained for as
+                  long as your account remains active.
+                </ListItem>
+                <ListItem>
+                  <strong>Medical Records:</strong> In accordance with
+                  healthcare regulations and legal requirements, medical records
+                  and clinical data are retained for a minimum of 10 years to
+                  ensure continuity of care and legal compliance.
+                </ListItem>
+                <ListItem>
+                  <strong>Diagnostic Data:</strong> App crash logs and
+                  performance data are retained for a maximum of 90 days before
+                  being anonymized or permanently deleted.
+                </ListItem>
+              </UnorderedList>
+              <Text
+                fontSize={{ base: "sm", md: "15px" }}
+                lineHeight="1.7"
+                mt={3}
+              >
+                You may request account deactivation and deletion of your
+                personal data by contacting us at{" "}
+                <strong>info@prognosistechnologies.com</strong>. Please note
+                that certain medical and financial records must be retained by
+                law and cannot be deleted upon request.
+              </Text>
+            </Box>
+
+            <Box>
+              <Heading fontSize={{ base: "20px", md: "2xl" }} mb={4}>
+                6. Your Rights
               </Heading>
               <Text
                 fontSize={{ base: "sm", md: "15px" }}
@@ -195,7 +245,7 @@ const PrivacyPolicy: React.FC = () => {
 
             <Box>
               <Heading fontSize={{ base: "20px", md: "2xl" }} mb={4}>
-                6. Cookies
+                7. Cookies
               </Heading>
               <Text fontSize={{ base: "sm", md: "15px" }} lineHeight="1.7">
                 Our website may use cookies to enhance your browsing experience.
@@ -207,7 +257,7 @@ const PrivacyPolicy: React.FC = () => {
 
             <Box>
               <Heading fontSize={{ base: "20px", md: "2xl" }} mb={4}>
-                7. Third-Party Links
+                8. Third-Party Links
               </Heading>
               <Text fontSize={{ base: "sm", md: "15px" }} lineHeight="1.7">
                 Our website may contain links to third-party websites. We are
@@ -218,7 +268,7 @@ const PrivacyPolicy: React.FC = () => {
 
             <Box>
               <Heading fontSize={{ base: "20px", md: "2xl" }} mb={4}>
-                8. Children's Privacy
+                9. Children's Privacy
               </Heading>
               <Text fontSize={{ base: "sm", md: "15px" }} lineHeight="1.7">
                 Our services are not directed to individuals under the age of
@@ -229,7 +279,7 @@ const PrivacyPolicy: React.FC = () => {
 
             <Box>
               <Heading fontSize={{ base: "20px", md: "2xl" }} mb={4}>
-                9. Changes to This Privacy Policy
+                10. Changes to This Privacy Policy
               </Heading>
               <Text fontSize={{ base: "sm", md: "15px" }} lineHeight="1.7">
                 We may update this Privacy Policy from time to time. Any changes
@@ -240,7 +290,7 @@ const PrivacyPolicy: React.FC = () => {
 
             <Box>
               <Heading fontSize={{ base: "20px", md: "2xl" }} mb={4}>
-                10. Contact Us
+                11. Contact Us
               </Heading>
               <Text fontSize={{ base: "sm", md: "15px" }} lineHeight="1.7">
                 If you have any questions or concerns about this Privacy Policy,
